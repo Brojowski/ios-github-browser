@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Highlightr" "${PODS_CONFIGURATION_BUILD_DIR}/NBNRequestKit" "${PODS_CONFIGURATION_BUILD_DIR}/OctoKit.swift"
+OTHER_CFLAGS = $(inherited) -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Highlightr/Highlightr.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/NBNRequestKit/RequestKit.modulemap" -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/OctoKit.swift/Octokit.modulemap"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"Highlightr" -l"NBNRequestKit" -l"OctoKit.swift" -framework "UIKit"
+OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/Highlightr/Highlightr.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/NBNRequestKit/RequestKit.modulemap" -Xcc -fmodule-map-file="${PODS_CONFIGURATION_BUILD_DIR}/OctoKit.swift/Octokit.modulemap"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+SWIFT_INCLUDE_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Highlightr" "${PODS_CONFIGURATION_BUILD_DIR}/NBNRequestKit" "${PODS_CONFIGURATION_BUILD_DIR}/OctoKit.swift"

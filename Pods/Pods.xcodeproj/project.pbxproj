@@ -1,0 +1,1174 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B78232EF24887A6F480DC007A94295 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA42D71E224A191FE4FE237EA8D213B /* PullRequest.swift */; };
+		0366518D414D9F8A0AB19E32032AEFCA /* Pods-ios-github-browser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 57355B61BB5512A2A720ACBA38CB0F42 /* Pods-ios-github-browser-dummy.m */; };
+		04D113CA2787D345A67F99C69890F04D /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6959C66082E41FF317C8D146223C8702 /* URL+URLParameters.swift */; };
+		08E3AFFDC9A0ED5C9872E83F8BE8A183 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF18CB8E047B3B9CF4AEFDE0A585201 /* Configuration.swift */; };
+		0DD5E42E2D05ABFE7795DA048ECC82E1 /* HTMLUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD03D6C28124CA9D93F8F067BAED50B /* HTMLUtils.swift */; };
+		0EBB9311542C50A6B1EB9B0D47001B0F /* Highlightr-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 20C5F14227C029E1703DDD7CC5D72485 /* Highlightr-dummy.m */; };
+		139D6A9B03AEA2F3CD4770A2545DC941 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = F172B7D410E4DDD977057DF84B6707B4 /* Label.swift */; };
+		17A0B85067CCCAF39000D02384F1BA7A /* CodeAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1E219365933514D243AA4A01AEC763 /* CodeAttributedString.swift */; };
+		2078C02C4A038AA045696FF703002214 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = A70DD1B976F8D5D597AEBF65B2716A20 /* Time.swift */; };
+		212341D5C8DAED453818EFE3AE192B9C /* NBNRequestKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAD71BDD130A91AACD248E53B3C3A016 /* NBNRequestKit-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		225ACC111EE9B1A663900E3315111D5C /* NBNRequestKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F80A3D90C68900B67B945489F3E62C7 /* NBNRequestKit-dummy.m */; };
+		24F3E05EBD89A49FAD7A309FB53370BB /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB17C5415CB19077392E8A62439FD200 /* Stars.swift */; };
+		2524B42CCF64D2AE627FC2FDCEC20F48 /* Highlightr-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E547DA829D6A0736E623D0783B8F6B64 /* Highlightr-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3590942349C6D7F6F6536B59FBBD6AA4 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 329AB1AB75D1ECA8B7E7ADA20A69D1F4 /* Follow.swift */; };
+		506DC80E524876C7CF80A352F357ED40 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4F0D738AB1986FB24C2358C67ACB58 /* Router.swift */; };
+		6849D26DBF91984361B771C8AA36CC92 /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85805C6A361572C1F51F50EF7B4E2E21 /* Octokit.swift */; };
+		685122D9243B1DBB1E7AB6AEC96F13A1 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C30F574ED3E4B47FB7EA1BDCD204D81 /* Milestone.swift */; };
+		7D70D1C36CB6096722FF4B5FBD118F44 /* RequestKitSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FC0195FE8AA37998E2EACC6FFAA0 /* RequestKitSession.swift */; };
+		806D9AE05B962FFE8515376D5D179383 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8843D2F91374251B0F30B828E2F2EFAD /* Issue.swift */; };
+		872BAB74C3BE469AA8E191FC6461184F /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B520977D698A7B33972AD9605FCFB4F /* PublicKey.swift */; };
+		8C1267FE110B0521E0AA54FD5D1EF807 /* Highlightr.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BBAAC4A8A640AB60AE3800CEA64290 /* Highlightr.swift */; };
+		8F31F99EC7FBCD2A41835C76B8BC6D24 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B922873A241F05134EF954153E45DF24 /* Repositories.swift */; };
+		985A6B5FCAD52B3F534964C8C95B5413 /* JSONPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47527DAF3F93678028A04F345C00A2D0 /* JSONPostRouter.swift */; };
+		A7810E32068909A3287DA52E2EC87FC1 /* OctoKit.swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 53B18E769910EC2E43FDD7217B7734DA /* OctoKit.swift-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BAD0705DA741A26D41AF4E8F2ABA706D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B5F66E1713758BCA08BFA691B8D60C1 /* Theme.swift */; };
+		CC8811CB92DF89D0C01562B2B504C98F /* Pods-ios-github-browser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31590C5C538961E1BC1006F799071344 /* Pods-ios-github-browser-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D6DC5AEB957A8710DBEEF362B548FEC4 /* OctoKit.swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EDB9CA91C56C3F2A0E09FBAED0FFD2B3 /* OctoKit.swift-dummy.m */; };
+		E1EC75EBF200C3993B4DAB91F4527AFB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42BDAD16CC60B11A7032864E399A3768 /* User.swift */; };
+		EAF707DBEAD7946E678A7DB5370FB9ED /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3286F514EC8264B46D7C2840CA42CA7 /* Parameters.swift */; };
+		ED6743B6E76BB9A9A63CA2F0D391A536 /* Shims.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E5F7C5249E128C7979BCBD81FC07C9 /* Shims.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		078AD546EA8924A3E213E9E8DBE8CBDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8B6A54EEE25A9B9BCA3F14764837D72;
+			remoteInfo = NBNRequestKit;
+		};
+		6DF97A021FE944A4F5BED0DCC6612384 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8B6A54EEE25A9B9BCA3F14764837D72;
+			remoteInfo = NBNRequestKit;
+		};
+		8BCF7BF799D9AE10E427514EBC593F1E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7557E1AC034FC0E7900EC77FFA6B0363;
+			remoteInfo = OctoKit.swift;
+		};
+		CE0665C18DBE9936E7C61AD1FBE46C68 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A628900367039354E89F15E1A8D3BBFD;
+			remoteInfo = Highlightr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0072CD7C85B03728987400C8B8DED7F7 /* highlight.min.js */ = {isa = PBXFileReference; includeInIndex = 1; name = highlight.min.js; path = Pod/Assets/Highlighter/highlight.min.js; sourceTree = "<group>"; };
+		0B6873B517D2FD389B2FDDF90FA2BED3 /* Pods-ios-github-browser-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ios-github-browser-acknowledgements.plist"; sourceTree = "<group>"; };
+		0F6715A7EB9A9D5C0935D6D33746BED8 /* an-old-hope.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "an-old-hope.min.css"; path = "Pod/Assets/styles/an-old-hope.min.css"; sourceTree = "<group>"; };
+		14F8EF34756ADB94C0DDCACB5C3B0889 /* qtcreator_dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_dark.min.css; path = Pod/Assets/styles/qtcreator_dark.min.css; sourceTree = "<group>"; };
+		1AD818D2BC9D16CB08E1466227E1A170 /* tomorrow-night-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-blue.min.css"; path = "Pod/Assets/styles/tomorrow-night-blue.min.css"; sourceTree = "<group>"; };
+		1F8C44B1A3F3585407838CC19A5B72F8 /* brown-paper.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "brown-paper.min.css"; path = "Pod/Assets/styles/brown-paper.min.css"; sourceTree = "<group>"; };
+		1FA653EBAE43FEB80EAA987FDDB45FB3 /* kimbie.dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.dark.min.css; path = Pod/Assets/styles/kimbie.dark.min.css; sourceTree = "<group>"; };
+		1FB78BACF2E9BCAE1D2E7DC92B99402C /* atelier-forest-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-dark.min.css"; path = "Pod/Assets/styles/atelier-forest-dark.min.css"; sourceTree = "<group>"; };
+		20C5F14227C029E1703DDD7CC5D72485 /* Highlightr-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Highlightr-dummy.m"; sourceTree = "<group>"; };
+		2152FC0195FE8AA37998E2EACC6FFAA0 /* RequestKitSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestKitSession.swift; path = RequestKit/RequestKitSession.swift; sourceTree = "<group>"; };
+		24844080831BE749DD1B48550C4302F7 /* grayscale.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = grayscale.min.css; path = Pod/Assets/styles/grayscale.min.css; sourceTree = "<group>"; };
+		25D3DE86BB750A2D823B16B4122BBA24 /* gruvbox-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-dark.min.css"; path = "Pod/Assets/styles/gruvbox-dark.min.css"; sourceTree = "<group>"; };
+		2AA9720E585A246E20C407D33F08BD64 /* atelier-plateau-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-light.min.css"; path = "Pod/Assets/styles/atelier-plateau-light.min.css"; sourceTree = "<group>"; };
+		2B11E01CD468B4B01558105CBAE5EA7B /* tomorrow-night-bright.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-bright.min.css"; path = "Pod/Assets/styles/tomorrow-night-bright.min.css"; sourceTree = "<group>"; };
+		2C1E219365933514D243AA4A01AEC763 /* CodeAttributedString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CodeAttributedString.swift; path = Pod/Classes/CodeAttributedString.swift; sourceTree = "<group>"; };
+		2E25AAA689DB2013688521F210BAADBD /* atelier-heath-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-light.min.css"; path = "Pod/Assets/styles/atelier-heath-light.min.css"; sourceTree = "<group>"; };
+		2E72DBA95C87E2C8EE962AFEBF626ED4 /* paraiso-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-dark.min.css"; path = "Pod/Assets/styles/paraiso-dark.min.css"; sourceTree = "<group>"; };
+		31590C5C538961E1BC1006F799071344 /* Pods-ios-github-browser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ios-github-browser-umbrella.h"; sourceTree = "<group>"; };
+		329AB1AB75D1ECA8B7E7ADA20A69D1F4 /* Follow.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Follow.swift; path = OctoKit/Follow.swift; sourceTree = "<group>"; };
+		33B9D5C010F57191BF5E8A407515155B /* libOctoKit.swift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libOctoKit.swift.a; path = libOctoKit.swift.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3436D1BD883AC137471BF4FD4C659CCB /* atelier-seaside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-dark.min.css"; path = "Pod/Assets/styles/atelier-seaside-dark.min.css"; sourceTree = "<group>"; };
+		34F33CA4A056A71A80A5C73B9AE47429 /* isbl-editor-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "isbl-editor-light.min.css"; path = "Pod/Assets/styles/isbl-editor-light.min.css"; sourceTree = "<group>"; };
+		39256B25382B9CE1AD897CAAA847FE49 /* atelier-savanna-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-dark.min.css"; path = "Pod/Assets/styles/atelier-savanna-dark.min.css"; sourceTree = "<group>"; };
+		3B5F66E1713758BCA08BFA691B8D60C1 /* Theme.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Theme.swift; path = Pod/Classes/Theme.swift; sourceTree = "<group>"; };
+		3F0E5EC59D227756D053E2867C01A1F0 /* docco.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = docco.min.css; path = Pod/Assets/styles/docco.min.css; sourceTree = "<group>"; };
+		3F1453CFD20D27F127CF89C36D4E82C9 /* ascetic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ascetic.min.css; path = Pod/Assets/styles/ascetic.min.css; sourceTree = "<group>"; };
+		3FA42D71E224A191FE4FE237EA8D213B /* PullRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PullRequest.swift; path = OctoKit/PullRequest.swift; sourceTree = "<group>"; };
+		408ABDEC990E291367CA1149067DFD63 /* Pods-ios-github-browser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ios-github-browser.modulemap"; sourceTree = "<group>"; };
+		40A19D4DC4D3D5A090D9A6AC3B78223D /* kimbie.light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = kimbie.light.min.css; path = Pod/Assets/styles/kimbie.light.min.css; sourceTree = "<group>"; };
+		42BDAD16CC60B11A7032864E399A3768 /* User.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = User.swift; path = OctoKit/User.swift; sourceTree = "<group>"; };
+		42EF54FFAA4E99E4FEEE9AFC5B2FD671 /* vs2015.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs2015.min.css; path = Pod/Assets/styles/vs2015.min.css; sourceTree = "<group>"; };
+		436E2BB56D368BC998B991971F629B8E /* NBNRequestKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NBNRequestKit.modulemap; sourceTree = "<group>"; };
+		44CC65EE02442D7C44014DEF33F9C182 /* atelier-savanna-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-savanna-light.min.css"; path = "Pod/Assets/styles/atelier-savanna-light.min.css"; sourceTree = "<group>"; };
+		46E5F7C5249E128C7979BCBD81FC07C9 /* Shims.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Shims.swift; path = Pod/Classes/Shims.swift; sourceTree = "<group>"; };
+		47527DAF3F93678028A04F345C00A2D0 /* JSONPostRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JSONPostRouter.swift; path = RequestKit/JSONPostRouter.swift; sourceTree = "<group>"; };
+		4857F5C7E15CE65A54C900C80AB2B70C /* hopscotch.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hopscotch.min.css; path = Pod/Assets/styles/hopscotch.min.css; sourceTree = "<group>"; };
+		49C05B9FA0C548B58DD190CD3DCE6A3C /* atelier-lakeside-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-dark.min.css"; path = "Pod/Assets/styles/atelier-lakeside-dark.min.css"; sourceTree = "<group>"; };
+		4E4098C7336C0EBF78AB71B6A197444D /* xt256.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xt256.min.css; path = Pod/Assets/styles/xt256.min.css; sourceTree = "<group>"; };
+		4F22F888ECC06FCCB9957E43415F2D20 /* gruvbox-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "gruvbox-light.min.css"; path = "Pod/Assets/styles/gruvbox-light.min.css"; sourceTree = "<group>"; };
+		4FFB2268E9F24EC79CF3FB56F370279B /* github-gist.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "github-gist.min.css"; path = "Pod/Assets/styles/github-gist.min.css"; sourceTree = "<group>"; };
+		507DBBEF0AA183AF6CBCC4B288C937E6 /* libNBNRequestKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNBNRequestKit.a; path = libNBNRequestKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		52FA56D3928217A6FDCD7A492606CC55 /* xcode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = xcode.min.css; path = Pod/Assets/styles/xcode.min.css; sourceTree = "<group>"; };
+		53B18E769910EC2E43FDD7217B7734DA /* OctoKit.swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OctoKit.swift-umbrella.h"; sourceTree = "<group>"; };
+		55A768DA9818F5E3B167B2F492197E68 /* lightfair.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = lightfair.min.css; path = Pod/Assets/styles/lightfair.min.css; sourceTree = "<group>"; };
+		57006151D4C2B33886035748D3FD5E96 /* NBNRequestKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBNRequestKit-prefix.pch"; sourceTree = "<group>"; };
+		57355B61BB5512A2A720ACBA38CB0F42 /* Pods-ios-github-browser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ios-github-browser-dummy.m"; sourceTree = "<group>"; };
+		597A5E1096B2B5039C40C9888B4605DA /* sunburst.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = sunburst.min.css; path = Pod/Assets/styles/sunburst.min.css; sourceTree = "<group>"; };
+		598E44EFDA9FB87F5DE24E74CB683DEB /* isbl-editor-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "isbl-editor-dark.min.css"; path = "Pod/Assets/styles/isbl-editor-dark.min.css"; sourceTree = "<group>"; };
+		5B83324AF3A8C65DA232A4B102E9BE2B /* atelier-heath-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-heath-dark.min.css"; path = "Pod/Assets/styles/atelier-heath-dark.min.css"; sourceTree = "<group>"; };
+		5B85D343F349155BDEC4239E614F7F9F /* arta.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = arta.min.css; path = Pod/Assets/styles/arta.min.css; sourceTree = "<group>"; };
+		5C30F574ED3E4B47FB7EA1BDCD204D81 /* Milestone.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Milestone.swift; path = OctoKit/Milestone.swift; sourceTree = "<group>"; };
+		5CD03D6C28124CA9D93F8F067BAED50B /* HTMLUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLUtils.swift; path = Pod/Classes/HTMLUtils.swift; sourceTree = "<group>"; };
+		5D1D9A234C2EA498AD24253BA9F07DAC /* atom-one-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-light.min.css"; path = "Pod/Assets/styles/atom-one-light.min.css"; sourceTree = "<group>"; };
+		5E3D7401B6369799AE2B9BA9C9E3F677 /* idea.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = idea.min.css; path = Pod/Assets/styles/idea.min.css; sourceTree = "<group>"; };
+		609CDD403131553525EFE9A15FA46B2C /* routeros.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = routeros.min.css; path = Pod/Assets/styles/routeros.min.css; sourceTree = "<group>"; };
+		611C9CF1D975E5A30D5AE55DAA69D9AB /* a11y-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "a11y-light.min.css"; path = "Pod/Assets/styles/a11y-light.min.css"; sourceTree = "<group>"; };
+		621F85AC486D4F5B85B058890CB1D1C9 /* zenburn.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = zenburn.min.css; path = Pod/Assets/styles/zenburn.min.css; sourceTree = "<group>"; };
+		674D215D25FFC47365718BFE2951AD5D /* agate.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = agate.min.css; path = Pod/Assets/styles/agate.min.css; sourceTree = "<group>"; };
+		6959C66082E41FF317C8D146223C8702 /* URL+URLParameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+URLParameters.swift"; path = "OctoKit/URL+URLParameters.swift"; sourceTree = "<group>"; };
+		6A5326C179D0753DAEEEC3D045FAE020 /* pojoaque.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = pojoaque.min.css; path = Pod/Assets/styles/pojoaque.min.css; sourceTree = "<group>"; };
+		6B520977D698A7B33972AD9605FCFB4F /* PublicKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = OctoKit/PublicKey.swift; sourceTree = "<group>"; };
+		6B90AAC554CD6F14BA5E05D4DCEC6C51 /* solarized-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-dark.min.css"; path = "Pod/Assets/styles/solarized-dark.min.css"; sourceTree = "<group>"; };
+		6CD78B3A719C403E324FB8345A5A874C /* atelier-estuary-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-light.min.css"; path = "Pod/Assets/styles/atelier-estuary-light.min.css"; sourceTree = "<group>"; };
+		6D35020E90F3E1C6A591B4C610D699E4 /* tomorrow-night-eighties.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night-eighties.min.css"; path = "Pod/Assets/styles/tomorrow-night-eighties.min.css"; sourceTree = "<group>"; };
+		7184BD8C20F0E28EFBE54AA9590ED800 /* atelier-cave-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-light.min.css"; path = "Pod/Assets/styles/atelier-cave-light.min.css"; sourceTree = "<group>"; };
+		71876A98908755769069DF00EC9B606D /* mono-blue.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "mono-blue.min.css"; path = "Pod/Assets/styles/mono-blue.min.css"; sourceTree = "<group>"; };
+		771EDEAB62B01F6639FF74DB3374728E /* tomorrow-night.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "tomorrow-night.min.css"; path = "Pod/Assets/styles/tomorrow-night.min.css"; sourceTree = "<group>"; };
+		7C3DE888C173CB42F87B40259770EFEA /* monokai.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = monokai.min.css; path = Pod/Assets/styles/monokai.min.css; sourceTree = "<group>"; };
+		7CE84EAB2B0F590BAB79DFD3F4B1A8CA /* OctoKit.swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OctoKit.swift-prefix.pch"; sourceTree = "<group>"; };
+		7F6A96AD99C9BEBC2CEB7201B0E68E87 /* Pods-ios-github-browser-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ios-github-browser-resources.sh"; sourceTree = "<group>"; };
+		7F80A3D90C68900B67B945489F3E62C7 /* NBNRequestKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NBNRequestKit-dummy.m"; sourceTree = "<group>"; };
+		7FBCB3C423CF5188825B8592335D71BA /* darkula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darkula.min.css; path = Pod/Assets/styles/darkula.min.css; sourceTree = "<group>"; };
+		80CB143A03423BBB19D63E646FC8ED36 /* Pods-ios-github-browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-github-browser.debug.xcconfig"; sourceTree = "<group>"; };
+		84474E6BED56F935F3EC3CF5CE794DD4 /* school-book.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "school-book.min.css"; path = "Pod/Assets/styles/school-book.min.css"; sourceTree = "<group>"; };
+		85805C6A361572C1F51F50EF7B4E2E21 /* Octokit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Octokit.swift; path = OctoKit/Octokit.swift; sourceTree = "<group>"; };
+		85CF33901A6E2F8508C6ED7306C54841 /* atelier-forest-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-forest-light.min.css"; path = "Pod/Assets/styles/atelier-forest-light.min.css"; sourceTree = "<group>"; };
+		86F24CD173B0FE67CAC8D3A2A21ED902 /* tomorrow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = tomorrow.min.css; path = Pod/Assets/styles/tomorrow.min.css; sourceTree = "<group>"; };
+		87B534827038C0F04598F41E208F32AF /* a11y-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "a11y-dark.min.css"; path = "Pod/Assets/styles/a11y-dark.min.css"; sourceTree = "<group>"; };
+		8816BFF6E69F8E225EF6E618D692C8A7 /* NBNRequestKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NBNRequestKit.xcconfig; sourceTree = "<group>"; };
+		8843D2F91374251B0F30B828E2F2EFAD /* Issue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Issue.swift; path = OctoKit/Issue.swift; sourceTree = "<group>"; };
+		8C70D84D2C839AE2C0A363615536CFF4 /* atelier-plateau-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-plateau-dark.min.css"; path = "Pod/Assets/styles/atelier-plateau-dark.min.css"; sourceTree = "<group>"; };
+		8D38E7E1A60AD96F283EC718845CF258 /* qtcreator_light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = qtcreator_light.min.css; path = Pod/Assets/styles/qtcreator_light.min.css; sourceTree = "<group>"; };
+		8D8ACD87371DBBC8299478CEA2048873 /* monokai-sublime.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "monokai-sublime.min.css"; path = "Pod/Assets/styles/monokai-sublime.min.css"; sourceTree = "<group>"; };
+		8E9B44AA9EEDDC8AE1DB543395C206BC /* far.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = far.min.css; path = Pod/Assets/styles/far.min.css; sourceTree = "<group>"; };
+		8EDE0FCFE504428BC4AD0FE8600958C5 /* rainbow.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = rainbow.min.css; path = Pod/Assets/styles/rainbow.min.css; sourceTree = "<group>"; };
+		939B1BEDD053A6ED87F9087063B18C17 /* Highlightr-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Highlightr-prefix.pch"; sourceTree = "<group>"; };
+		9491D3B13DE051AE03ECE1A325B3F81D /* atelier-seaside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-seaside-light.min.css"; path = "Pod/Assets/styles/atelier-seaside-light.min.css"; sourceTree = "<group>"; };
+		95F88C5F338AC52D7DE24AA0FF89E44A /* vs.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = vs.min.css; path = Pod/Assets/styles/vs.min.css; sourceTree = "<group>"; };
+		968B39FC90CF450082ABAD688D181F1A /* ocean.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = ocean.min.css; path = Pod/Assets/styles/ocean.min.css; sourceTree = "<group>"; };
+		985F92E4945721EEE3234E3478F7A414 /* atelier-estuary-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-estuary-dark.min.css"; path = "Pod/Assets/styles/atelier-estuary-dark.min.css"; sourceTree = "<group>"; };
+		98A876D8B3DF9E24B490D882B31AA8ED /* Highlightr.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Highlightr.xcconfig; sourceTree = "<group>"; };
+		995683EC8B36CC8C14D8004544D12856 /* default.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = default.min.css; path = Pod/Assets/styles/default.min.css; sourceTree = "<group>"; };
+		9BF18CB8E047B3B9CF4AEFDE0A585201 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = OctoKit/Configuration.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A0377B5CE01BA832443A5B843F5E6FAF /* dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dark.min.css; path = Pod/Assets/styles/dark.min.css; sourceTree = "<group>"; };
+		A1C21784D678FD0E1D8581B9155587E0 /* ir-black.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "ir-black.min.css"; path = "Pod/Assets/styles/ir-black.min.css"; sourceTree = "<group>"; };
+		A70DD1B976F8D5D597AEBF65B2716A20 /* Time.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Time.swift; path = OctoKit/Time.swift; sourceTree = "<group>"; };
+		A7DC1FEE0A1816FFEB315D95C4620A40 /* atom-one-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-dark.min.css"; path = "Pod/Assets/styles/atom-one-dark.min.css"; sourceTree = "<group>"; };
+		AA1E4D47D8AF1CA7FC4DEC5E54DEAE04 /* atelier-lakeside-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-lakeside-light.min.css"; path = "Pod/Assets/styles/atelier-lakeside-light.min.css"; sourceTree = "<group>"; };
+		AA77EFEB9024B3F71F34AC8AB7AD8117 /* dracula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = dracula.min.css; path = Pod/Assets/styles/dracula.min.css; sourceTree = "<group>"; };
+		AB17C5415CB19077392E8A62439FD200 /* Stars.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stars.swift; path = OctoKit/Stars.swift; sourceTree = "<group>"; };
+		AB57E8264347E7C28E0127D177EFFF25 /* solarized-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "solarized-light.min.css"; path = "Pod/Assets/styles/solarized-light.min.css"; sourceTree = "<group>"; };
+		AB6A50E5882070E2A9BBF7D554B6F476 /* foundation.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = foundation.min.css; path = Pod/Assets/styles/foundation.min.css; sourceTree = "<group>"; };
+		AC6E88515E0A01F1262EA2167AF5418A /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
+		AD3D886D780CA0C695F9A5E518A1F79D /* atelier-cave-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-cave-dark.min.css"; path = "Pod/Assets/styles/atelier-cave-dark.min.css"; sourceTree = "<group>"; };
+		AE32143DFD2F4C3185D654768C9C64C0 /* androidstudio.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = androidstudio.min.css; path = Pod/Assets/styles/androidstudio.min.css; sourceTree = "<group>"; };
+		AF2E0DC6235D697077F785F532CE1C2E /* purebasic.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = purebasic.min.css; path = Pod/Assets/styles/purebasic.min.css; sourceTree = "<group>"; };
+		AF99D4321DD8547B717F7C4C4B960399 /* nord.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = nord.min.css; path = Pod/Assets/styles/nord.min.css; sourceTree = "<group>"; };
+		B3286F514EC8264B46D7C2840CA42CA7 /* Parameters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = OctoKit/Parameters.swift; sourceTree = "<group>"; };
+		B744F55A02E3F6A8947BC21BAC59E0FA /* darcula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = darcula.min.css; path = Pod/Assets/styles/darcula.min.css; sourceTree = "<group>"; };
+		B922873A241F05134EF954153E45DF24 /* Repositories.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repositories.swift; path = OctoKit/Repositories.swift; sourceTree = "<group>"; };
+		B9DA07B878F018322F545F48FE585A65 /* color-brewer.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "color-brewer.min.css"; path = "Pod/Assets/styles/color-brewer.min.css"; sourceTree = "<group>"; };
+		BA7DECE4EC699A7B1EA8EC6394ECA0C9 /* gml.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = gml.min.css; path = Pod/Assets/styles/gml.min.css; sourceTree = "<group>"; };
+		BB4F0D738AB1986FB24C2358C67ACB58 /* Router.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Router.swift; path = RequestKit/Router.swift; sourceTree = "<group>"; };
+		BB68989CF161473C530C044E461DAE1B /* Pods-ios-github-browser-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ios-github-browser-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BD642FE2140B97F5DA5D35A8824D896D /* libHighlightr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libHighlightr.a; path = libHighlightr.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C092148B513759FCEEF8D682486E91C6 /* github.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = github.min.css; path = Pod/Assets/styles/github.min.css; sourceTree = "<group>"; };
+		C60CA332B96FB71D786A72FB86556B03 /* arduino-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "arduino-light.min.css"; path = "Pod/Assets/styles/arduino-light.min.css"; sourceTree = "<group>"; };
+		C6C44C67A67C0D85867729F8ACA3359A /* atelier-dune-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-dark.min.css"; path = "Pod/Assets/styles/atelier-dune-dark.min.css"; sourceTree = "<group>"; };
+		C808AB42302A98DC22616F7BEEE11293 /* atom-one-dark-reasonable.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atom-one-dark-reasonable.min.css"; path = "Pod/Assets/styles/atom-one-dark-reasonable.min.css"; sourceTree = "<group>"; };
+		CA0F99DBAE6224BDC31C21A8B5D2A28A /* codepen-embed.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "codepen-embed.min.css"; path = "Pod/Assets/styles/codepen-embed.min.css"; sourceTree = "<group>"; };
+		CA2A89CBE789B652030FCAF1C7B02F9B /* railscasts.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = railscasts.min.css; path = Pod/Assets/styles/railscasts.min.css; sourceTree = "<group>"; };
+		D388F8D1476200E2A67A8F7E2A3F9F44 /* magula.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = magula.min.css; path = Pod/Assets/styles/magula.min.css; sourceTree = "<group>"; };
+		D498B217EDE1F2CD31225BE07C5E093F /* googlecode.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = googlecode.min.css; path = Pod/Assets/styles/googlecode.min.css; sourceTree = "<group>"; };
+		DAF310196797D69ECCB6FA39D5804081 /* hybrid.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = hybrid.min.css; path = Pod/Assets/styles/hybrid.min.css; sourceTree = "<group>"; };
+		DBBB085D47F313D8F9A695595EC73279 /* atelier-dune-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-dune-light.min.css"; path = "Pod/Assets/styles/atelier-dune-light.min.css"; sourceTree = "<group>"; };
+		DCE6232F849F2CB6D97197C5210A394F /* atelier-sulphurpool-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-light.min.css"; path = "Pod/Assets/styles/atelier-sulphurpool-light.min.css"; sourceTree = "<group>"; };
+		E0A61289352B226B9C2587E61C01D386 /* OctoKit.swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = OctoKit.swift.modulemap; sourceTree = "<group>"; };
+		E547DA829D6A0736E623D0783B8F6B64 /* Highlightr-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Highlightr-umbrella.h"; sourceTree = "<group>"; };
+		E5662214F833EA48BB16A81A5802B247 /* paraiso-light.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "paraiso-light.min.css"; path = "Pod/Assets/styles/paraiso-light.min.css"; sourceTree = "<group>"; };
+		ED186680F6AF4CCC6445928FFBAE45B1 /* obsidian.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = obsidian.min.css; path = Pod/Assets/styles/obsidian.min.css; sourceTree = "<group>"; };
+		ED2C2E32818FC8FE93FEB174BC9EFA9C /* atelier-sulphurpool-dark.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "atelier-sulphurpool-dark.min.css"; path = "Pod/Assets/styles/atelier-sulphurpool-dark.min.css"; sourceTree = "<group>"; };
+		ED3C1A3DFF963C64D3D4862962E2333C /* OctoKit.swift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OctoKit.swift.xcconfig; sourceTree = "<group>"; };
+		EDB9CA91C56C3F2A0E09FBAED0FFD2B3 /* OctoKit.swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OctoKit.swift-dummy.m"; sourceTree = "<group>"; };
+		F0BBAAC4A8A640AB60AE3800CEA64290 /* Highlightr.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Highlightr.swift; path = Pod/Classes/Highlightr.swift; sourceTree = "<group>"; };
+		F172B7D410E4DDD977057DF84B6707B4 /* Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Label.swift; path = OctoKit/Label.swift; sourceTree = "<group>"; };
+		F4B0A77EE16403979CDDD5EF82B6FC1E /* Highlightr.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Highlightr.modulemap; sourceTree = "<group>"; };
+		F6D109F7F44032315A9FE76B939AA7E7 /* shades-of-purple.min.css */ = {isa = PBXFileReference; includeInIndex = 1; name = "shades-of-purple.min.css"; path = "Pod/Assets/styles/shades-of-purple.min.css"; sourceTree = "<group>"; };
+		F7FCCC3C7962145E1C11B5FC39679750 /* libPods-ios-github-browser.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-ios-github-browser.a"; path = "libPods-ios-github-browser.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAD71BDD130A91AACD248E53B3C3A016 /* NBNRequestKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NBNRequestKit-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0E92556F9CDEB624A3D54689C9B2B030 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C742A77D8875FAEBAE0D9E38A9126D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B53968C01E730C08270489F0B90D0BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C9D59CF965902C59033CB2A9292A27FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CBC74D1652229CE69FEF9B611B509CA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0A61289352B226B9C2587E61C01D386 /* OctoKit.swift.modulemap */,
+				ED3C1A3DFF963C64D3D4862962E2333C /* OctoKit.swift.xcconfig */,
+				EDB9CA91C56C3F2A0E09FBAED0FFD2B3 /* OctoKit.swift-dummy.m */,
+				7CE84EAB2B0F590BAB79DFD3F4B1A8CA /* OctoKit.swift-prefix.pch */,
+				53B18E769910EC2E43FDD7217B7734DA /* OctoKit.swift-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/OctoKit.swift";
+			sourceTree = "<group>";
+		};
+		68DAC50C5C1B20DCBED69A73670D4C84 /* Pods-ios-github-browser */ = {
+			isa = PBXGroup;
+			children = (
+				408ABDEC990E291367CA1149067DFD63 /* Pods-ios-github-browser.modulemap */,
+				BB68989CF161473C530C044E461DAE1B /* Pods-ios-github-browser-acknowledgements.markdown */,
+				0B6873B517D2FD389B2FDDF90FA2BED3 /* Pods-ios-github-browser-acknowledgements.plist */,
+				57355B61BB5512A2A720ACBA38CB0F42 /* Pods-ios-github-browser-dummy.m */,
+				7F6A96AD99C9BEBC2CEB7201B0E68E87 /* Pods-ios-github-browser-resources.sh */,
+				31590C5C538961E1BC1006F799071344 /* Pods-ios-github-browser-umbrella.h */,
+				80CB143A03423BBB19D63E646FC8ED36 /* Pods-ios-github-browser.debug.xcconfig */,
+				AC6E88515E0A01F1262EA2167AF5418A /* Pods-ios-github-browser.release.xcconfig */,
+			);
+			name = "Pods-ios-github-browser";
+			path = "Target Support Files/Pods-ios-github-browser";
+			sourceTree = "<group>";
+		};
+		A1D61F3ACD752BD9CEB54BC3EC872035 /* OctoKit.swift */ = {
+			isa = PBXGroup;
+			children = (
+				9BF18CB8E047B3B9CF4AEFDE0A585201 /* Configuration.swift */,
+				329AB1AB75D1ECA8B7E7ADA20A69D1F4 /* Follow.swift */,
+				8843D2F91374251B0F30B828E2F2EFAD /* Issue.swift */,
+				F172B7D410E4DDD977057DF84B6707B4 /* Label.swift */,
+				5C30F574ED3E4B47FB7EA1BDCD204D81 /* Milestone.swift */,
+				85805C6A361572C1F51F50EF7B4E2E21 /* Octokit.swift */,
+				B3286F514EC8264B46D7C2840CA42CA7 /* Parameters.swift */,
+				6B520977D698A7B33972AD9605FCFB4F /* PublicKey.swift */,
+				3FA42D71E224A191FE4FE237EA8D213B /* PullRequest.swift */,
+				B922873A241F05134EF954153E45DF24 /* Repositories.swift */,
+				AB17C5415CB19077392E8A62439FD200 /* Stars.swift */,
+				A70DD1B976F8D5D597AEBF65B2716A20 /* Time.swift */,
+				6959C66082E41FF317C8D146223C8702 /* URL+URLParameters.swift */,
+				42BDAD16CC60B11A7032864E399A3768 /* User.swift */,
+				4CBC74D1652229CE69FEF9B611B509CA /* Support Files */,
+			);
+			name = OctoKit.swift;
+			path = OctoKit.swift;
+			sourceTree = "<group>";
+		};
+		A2C40C7DBEB3CC9DA6EE3FEF724D49B7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B0A77EE16403979CDDD5EF82B6FC1E /* Highlightr.modulemap */,
+				98A876D8B3DF9E24B490D882B31AA8ED /* Highlightr.xcconfig */,
+				20C5F14227C029E1703DDD7CC5D72485 /* Highlightr-dummy.m */,
+				939B1BEDD053A6ED87F9087063B18C17 /* Highlightr-prefix.pch */,
+				E547DA829D6A0736E623D0783B8F6B64 /* Highlightr-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Highlightr";
+			sourceTree = "<group>";
+		};
+		A4F0CFF96659D16FE8F1773A667F4749 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				87B534827038C0F04598F41E208F32AF /* a11y-dark.min.css */,
+				611C9CF1D975E5A30D5AE55DAA69D9AB /* a11y-light.min.css */,
+				674D215D25FFC47365718BFE2951AD5D /* agate.min.css */,
+				0F6715A7EB9A9D5C0935D6D33746BED8 /* an-old-hope.min.css */,
+				AE32143DFD2F4C3185D654768C9C64C0 /* androidstudio.min.css */,
+				C60CA332B96FB71D786A72FB86556B03 /* arduino-light.min.css */,
+				5B85D343F349155BDEC4239E614F7F9F /* arta.min.css */,
+				3F1453CFD20D27F127CF89C36D4E82C9 /* ascetic.min.css */,
+				AD3D886D780CA0C695F9A5E518A1F79D /* atelier-cave-dark.min.css */,
+				7184BD8C20F0E28EFBE54AA9590ED800 /* atelier-cave-light.min.css */,
+				C6C44C67A67C0D85867729F8ACA3359A /* atelier-dune-dark.min.css */,
+				DBBB085D47F313D8F9A695595EC73279 /* atelier-dune-light.min.css */,
+				985F92E4945721EEE3234E3478F7A414 /* atelier-estuary-dark.min.css */,
+				6CD78B3A719C403E324FB8345A5A874C /* atelier-estuary-light.min.css */,
+				1FB78BACF2E9BCAE1D2E7DC92B99402C /* atelier-forest-dark.min.css */,
+				85CF33901A6E2F8508C6ED7306C54841 /* atelier-forest-light.min.css */,
+				5B83324AF3A8C65DA232A4B102E9BE2B /* atelier-heath-dark.min.css */,
+				2E25AAA689DB2013688521F210BAADBD /* atelier-heath-light.min.css */,
+				49C05B9FA0C548B58DD190CD3DCE6A3C /* atelier-lakeside-dark.min.css */,
+				AA1E4D47D8AF1CA7FC4DEC5E54DEAE04 /* atelier-lakeside-light.min.css */,
+				8C70D84D2C839AE2C0A363615536CFF4 /* atelier-plateau-dark.min.css */,
+				2AA9720E585A246E20C407D33F08BD64 /* atelier-plateau-light.min.css */,
+				39256B25382B9CE1AD897CAAA847FE49 /* atelier-savanna-dark.min.css */,
+				44CC65EE02442D7C44014DEF33F9C182 /* atelier-savanna-light.min.css */,
+				3436D1BD883AC137471BF4FD4C659CCB /* atelier-seaside-dark.min.css */,
+				9491D3B13DE051AE03ECE1A325B3F81D /* atelier-seaside-light.min.css */,
+				ED2C2E32818FC8FE93FEB174BC9EFA9C /* atelier-sulphurpool-dark.min.css */,
+				DCE6232F849F2CB6D97197C5210A394F /* atelier-sulphurpool-light.min.css */,
+				C808AB42302A98DC22616F7BEEE11293 /* atom-one-dark-reasonable.min.css */,
+				A7DC1FEE0A1816FFEB315D95C4620A40 /* atom-one-dark.min.css */,
+				5D1D9A234C2EA498AD24253BA9F07DAC /* atom-one-light.min.css */,
+				1F8C44B1A3F3585407838CC19A5B72F8 /* brown-paper.min.css */,
+				CA0F99DBAE6224BDC31C21A8B5D2A28A /* codepen-embed.min.css */,
+				B9DA07B878F018322F545F48FE585A65 /* color-brewer.min.css */,
+				B744F55A02E3F6A8947BC21BAC59E0FA /* darcula.min.css */,
+				A0377B5CE01BA832443A5B843F5E6FAF /* dark.min.css */,
+				7FBCB3C423CF5188825B8592335D71BA /* darkula.min.css */,
+				995683EC8B36CC8C14D8004544D12856 /* default.min.css */,
+				3F0E5EC59D227756D053E2867C01A1F0 /* docco.min.css */,
+				AA77EFEB9024B3F71F34AC8AB7AD8117 /* dracula.min.css */,
+				8E9B44AA9EEDDC8AE1DB543395C206BC /* far.min.css */,
+				AB6A50E5882070E2A9BBF7D554B6F476 /* foundation.min.css */,
+				4FFB2268E9F24EC79CF3FB56F370279B /* github-gist.min.css */,
+				C092148B513759FCEEF8D682486E91C6 /* github.min.css */,
+				BA7DECE4EC699A7B1EA8EC6394ECA0C9 /* gml.min.css */,
+				D498B217EDE1F2CD31225BE07C5E093F /* googlecode.min.css */,
+				24844080831BE749DD1B48550C4302F7 /* grayscale.min.css */,
+				25D3DE86BB750A2D823B16B4122BBA24 /* gruvbox-dark.min.css */,
+				4F22F888ECC06FCCB9957E43415F2D20 /* gruvbox-light.min.css */,
+				0072CD7C85B03728987400C8B8DED7F7 /* highlight.min.js */,
+				4857F5C7E15CE65A54C900C80AB2B70C /* hopscotch.min.css */,
+				DAF310196797D69ECCB6FA39D5804081 /* hybrid.min.css */,
+				5E3D7401B6369799AE2B9BA9C9E3F677 /* idea.min.css */,
+				A1C21784D678FD0E1D8581B9155587E0 /* ir-black.min.css */,
+				598E44EFDA9FB87F5DE24E74CB683DEB /* isbl-editor-dark.min.css */,
+				34F33CA4A056A71A80A5C73B9AE47429 /* isbl-editor-light.min.css */,
+				1FA653EBAE43FEB80EAA987FDDB45FB3 /* kimbie.dark.min.css */,
+				40A19D4DC4D3D5A090D9A6AC3B78223D /* kimbie.light.min.css */,
+				55A768DA9818F5E3B167B2F492197E68 /* lightfair.min.css */,
+				D388F8D1476200E2A67A8F7E2A3F9F44 /* magula.min.css */,
+				71876A98908755769069DF00EC9B606D /* mono-blue.min.css */,
+				8D8ACD87371DBBC8299478CEA2048873 /* monokai-sublime.min.css */,
+				7C3DE888C173CB42F87B40259770EFEA /* monokai.min.css */,
+				AF99D4321DD8547B717F7C4C4B960399 /* nord.min.css */,
+				ED186680F6AF4CCC6445928FFBAE45B1 /* obsidian.min.css */,
+				968B39FC90CF450082ABAD688D181F1A /* ocean.min.css */,
+				2E72DBA95C87E2C8EE962AFEBF626ED4 /* paraiso-dark.min.css */,
+				E5662214F833EA48BB16A81A5802B247 /* paraiso-light.min.css */,
+				6A5326C179D0753DAEEEC3D045FAE020 /* pojoaque.min.css */,
+				AF2E0DC6235D697077F785F532CE1C2E /* purebasic.min.css */,
+				14F8EF34756ADB94C0DDCACB5C3B0889 /* qtcreator_dark.min.css */,
+				8D38E7E1A60AD96F283EC718845CF258 /* qtcreator_light.min.css */,
+				CA2A89CBE789B652030FCAF1C7B02F9B /* railscasts.min.css */,
+				8EDE0FCFE504428BC4AD0FE8600958C5 /* rainbow.min.css */,
+				609CDD403131553525EFE9A15FA46B2C /* routeros.min.css */,
+				84474E6BED56F935F3EC3CF5CE794DD4 /* school-book.min.css */,
+				F6D109F7F44032315A9FE76B939AA7E7 /* shades-of-purple.min.css */,
+				6B90AAC554CD6F14BA5E05D4DCEC6C51 /* solarized-dark.min.css */,
+				AB57E8264347E7C28E0127D177EFFF25 /* solarized-light.min.css */,
+				597A5E1096B2B5039C40C9888B4605DA /* sunburst.min.css */,
+				1AD818D2BC9D16CB08E1466227E1A170 /* tomorrow-night-blue.min.css */,
+				2B11E01CD468B4B01558105CBAE5EA7B /* tomorrow-night-bright.min.css */,
+				6D35020E90F3E1C6A591B4C610D699E4 /* tomorrow-night-eighties.min.css */,
+				771EDEAB62B01F6639FF74DB3374728E /* tomorrow-night.min.css */,
+				86F24CD173B0FE67CAC8D3A2A21ED902 /* tomorrow.min.css */,
+				95F88C5F338AC52D7DE24AA0FF89E44A /* vs.min.css */,
+				42EF54FFAA4E99E4FEEE9AFC5B2FD671 /* vs2015.min.css */,
+				52FA56D3928217A6FDCD7A492606CC55 /* xcode.min.css */,
+				4E4098C7336C0EBF78AB71B6A197444D /* xt256.min.css */,
+				621F85AC486D4F5B85B058890CB1D1C9 /* zenburn.min.css */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		AD507C21BBEDA7F13FB081D785DCD501 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAD18FEDCD73BD6FEB3C48BA84687115 /* Highlightr */,
+				F60CFF2582F12614A130369C3631D6D1 /* NBNRequestKit */,
+				A1D61F3ACD752BD9CEB54BC3EC872035 /* OctoKit.swift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B0C5A69A2AEFB84AD7441E4F56F463CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD642FE2140B97F5DA5D35A8824D896D /* libHighlightr.a */,
+				507DBBEF0AA183AF6CBCC4B288C937E6 /* libNBNRequestKit.a */,
+				33B9D5C010F57191BF5E8A407515155B /* libOctoKit.swift.a */,
+				F7FCCC3C7962145E1C11B5FC39679750 /* libPods-ios-github-browser.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
+				AD507C21BBEDA7F13FB081D785DCD501 /* Pods */,
+				B0C5A69A2AEFB84AD7441E4F56F463CE /* Products */,
+				F7B057EB9A88E9BFE48549759CB14DB0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD18FEDCD73BD6FEB3C48BA84687115 /* Highlightr */ = {
+			isa = PBXGroup;
+			children = (
+				2C1E219365933514D243AA4A01AEC763 /* CodeAttributedString.swift */,
+				F0BBAAC4A8A640AB60AE3800CEA64290 /* Highlightr.swift */,
+				5CD03D6C28124CA9D93F8F067BAED50B /* HTMLUtils.swift */,
+				46E5F7C5249E128C7979BCBD81FC07C9 /* Shims.swift */,
+				3B5F66E1713758BCA08BFA691B8D60C1 /* Theme.swift */,
+				A4F0CFF96659D16FE8F1773A667F4749 /* Resources */,
+				A2C40C7DBEB3CC9DA6EE3FEF724D49B7 /* Support Files */,
+			);
+			name = Highlightr;
+			path = Highlightr;
+			sourceTree = "<group>";
+		};
+		F20B4CA12AE17511E910C20A9BED9DB2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				436E2BB56D368BC998B991971F629B8E /* NBNRequestKit.modulemap */,
+				8816BFF6E69F8E225EF6E618D692C8A7 /* NBNRequestKit.xcconfig */,
+				7F80A3D90C68900B67B945489F3E62C7 /* NBNRequestKit-dummy.m */,
+				57006151D4C2B33886035748D3FD5E96 /* NBNRequestKit-prefix.pch */,
+				FAD71BDD130A91AACD248E53B3C3A016 /* NBNRequestKit-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NBNRequestKit";
+			sourceTree = "<group>";
+		};
+		F60CFF2582F12614A130369C3631D6D1 /* NBNRequestKit */ = {
+			isa = PBXGroup;
+			children = (
+				47527DAF3F93678028A04F345C00A2D0 /* JSONPostRouter.swift */,
+				2152FC0195FE8AA37998E2EACC6FFAA0 /* RequestKitSession.swift */,
+				BB4F0D738AB1986FB24C2358C67ACB58 /* Router.swift */,
+				F20B4CA12AE17511E910C20A9BED9DB2 /* Support Files */,
+			);
+			name = NBNRequestKit;
+			path = NBNRequestKit;
+			sourceTree = "<group>";
+		};
+		F7B057EB9A88E9BFE48549759CB14DB0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				68DAC50C5C1B20DCBED69A73670D4C84 /* Pods-ios-github-browser */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1ACC4C9D1BEA2E2AA10A4247540A4CFE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2524B42CCF64D2AE627FC2FDCEC20F48 /* Highlightr-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A570006DAA0CFB54800577922ABF53B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7810E32068909A3287DA52E2EC87FC1 /* OctoKit.swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B767452AB8D229C1C77845A914D6DD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212341D5C8DAED453818EFE3AE192B9C /* NBNRequestKit-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC093C5EF1BD2DC333B6519C9E098139 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8811CB92DF89D0C01562B2B504C98F /* Pods-ios-github-browser-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		365F163CAFC304E008E81294F4A37AED /* Pods-ios-github-browser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D3E2D84FC938F55C14460EE40E4EE69 /* Build configuration list for PBXNativeTarget "Pods-ios-github-browser" */;
+			buildPhases = (
+				BC093C5EF1BD2DC333B6519C9E098139 /* Headers */,
+				45CEED5607B6E3181750A4C925CD0709 /* Sources */,
+				9B53968C01E730C08270489F0B90D0BD /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE28AB8DC4062F8BB59C3C041125093 /* PBXTargetDependency */,
+				C93279D0DEFD106362FD3F4073FBE78D /* PBXTargetDependency */,
+				21A0221C975631239CF9EA2D93171E72 /* PBXTargetDependency */,
+			);
+			name = "Pods-ios-github-browser";
+			productName = "Pods-ios-github-browser";
+			productReference = F7FCCC3C7962145E1C11B5FC39679750 /* libPods-ios-github-browser.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7557E1AC034FC0E7900EC77FFA6B0363 /* OctoKit.swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C979080812FDD19839B51A99BA96F3 /* Build configuration list for PBXNativeTarget "OctoKit.swift" */;
+			buildPhases = (
+				3A570006DAA0CFB54800577922ABF53B /* Headers */,
+				072A0148BDD9D271B2EA14E56FFA7F53 /* Sources */,
+				7C742A77D8875FAEBAE0D9E38A9126D5 /* Frameworks */,
+				0E03D85DA47C53153D173F7082BD4908 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0307154FBA9089BC519C84674EE501A8 /* PBXTargetDependency */,
+			);
+			name = OctoKit.swift;
+			productName = OctoKit.swift;
+			productReference = 33B9D5C010F57191BF5E8A407515155B /* libOctoKit.swift.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A628900367039354E89F15E1A8D3BBFD /* Highlightr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2ECA776F19382A1777A9532158A92993 /* Build configuration list for PBXNativeTarget "Highlightr" */;
+			buildPhases = (
+				1ACC4C9D1BEA2E2AA10A4247540A4CFE /* Headers */,
+				8A32CD2058308E8DA78934E5B792C33F /* Sources */,
+				0E92556F9CDEB624A3D54689C9B2B030 /* Frameworks */,
+				8617E68CF1CA22C914B077C22B768D00 /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Highlightr;
+			productName = Highlightr;
+			productReference = BD642FE2140B97F5DA5D35A8824D896D /* libHighlightr.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A8B6A54EEE25A9B9BCA3F14764837D72 /* NBNRequestKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 179474AD5A8E5288ACF92B82039629FA /* Build configuration list for PBXNativeTarget "NBNRequestKit" */;
+			buildPhases = (
+				99B767452AB8D229C1C77845A914D6DD /* Headers */,
+				A7D675676FC8E7C6F2C6E9C16D759EA0 /* Sources */,
+				C9D59CF965902C59033CB2A9292A27FA /* Frameworks */,
+				69EB2A25F1EA7F7BD4F6C95A157449CA /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NBNRequestKit;
+			productName = NBNRequestKit;
+			productReference = 507DBBEF0AA183AF6CBCC4B288C937E6 /* libNBNRequestKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B0C5A69A2AEFB84AD7441E4F56F463CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A628900367039354E89F15E1A8D3BBFD /* Highlightr */,
+				A8B6A54EEE25A9B9BCA3F14764837D72 /* NBNRequestKit */,
+				7557E1AC034FC0E7900EC77FFA6B0363 /* OctoKit.swift */,
+				365F163CAFC304E008E81294F4A37AED /* Pods-ios-github-browser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E03D85DA47C53153D173F7082BD4908 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Octokit/OctoKit.swift.modulemap",
+				"${PODS_ROOT}/Headers/Public/Octokit/OctoKit.swift-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/OctoKit.swift-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Octokit/OctoKit.swift.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Octokit/OctoKit.swift-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		69EB2A25F1EA7F7BD4F6C95A157449CA /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/RequestKit/NBNRequestKit.modulemap",
+				"${PODS_ROOT}/Headers/Public/RequestKit/NBNRequestKit-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/NBNRequestKit-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/RequestKit/NBNRequestKit.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/RequestKit/NBNRequestKit-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+		8617E68CF1CA22C914B077C22B768D00 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/Highlightr/Highlightr.modulemap",
+				"${PODS_ROOT}/Headers/Public/Highlightr/Highlightr-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/Highlightr-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Highlightr/Highlightr.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/Highlightr/Highlightr-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		072A0148BDD9D271B2EA14E56FFA7F53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08E3AFFDC9A0ED5C9872E83F8BE8A183 /* Configuration.swift in Sources */,
+				3590942349C6D7F6F6536B59FBBD6AA4 /* Follow.swift in Sources */,
+				806D9AE05B962FFE8515376D5D179383 /* Issue.swift in Sources */,
+				139D6A9B03AEA2F3CD4770A2545DC941 /* Label.swift in Sources */,
+				685122D9243B1DBB1E7AB6AEC96F13A1 /* Milestone.swift in Sources */,
+				6849D26DBF91984361B771C8AA36CC92 /* Octokit.swift in Sources */,
+				D6DC5AEB957A8710DBEEF362B548FEC4 /* OctoKit.swift-dummy.m in Sources */,
+				EAF707DBEAD7946E678A7DB5370FB9ED /* Parameters.swift in Sources */,
+				872BAB74C3BE469AA8E191FC6461184F /* PublicKey.swift in Sources */,
+				01B78232EF24887A6F480DC007A94295 /* PullRequest.swift in Sources */,
+				8F31F99EC7FBCD2A41835C76B8BC6D24 /* Repositories.swift in Sources */,
+				24F3E05EBD89A49FAD7A309FB53370BB /* Stars.swift in Sources */,
+				2078C02C4A038AA045696FF703002214 /* Time.swift in Sources */,
+				04D113CA2787D345A67F99C69890F04D /* URL+URLParameters.swift in Sources */,
+				E1EC75EBF200C3993B4DAB91F4527AFB /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		45CEED5607B6E3181750A4C925CD0709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0366518D414D9F8A0AB19E32032AEFCA /* Pods-ios-github-browser-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A32CD2058308E8DA78934E5B792C33F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17A0B85067CCCAF39000D02384F1BA7A /* CodeAttributedString.swift in Sources */,
+				0EBB9311542C50A6B1EB9B0D47001B0F /* Highlightr-dummy.m in Sources */,
+				8C1267FE110B0521E0AA54FD5D1EF807 /* Highlightr.swift in Sources */,
+				0DD5E42E2D05ABFE7795DA048ECC82E1 /* HTMLUtils.swift in Sources */,
+				ED6743B6E76BB9A9A63CA2F0D391A536 /* Shims.swift in Sources */,
+				BAD0705DA741A26D41AF4E8F2ABA706D /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7D675676FC8E7C6F2C6E9C16D759EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				985A6B5FCAD52B3F534964C8C95B5413 /* JSONPostRouter.swift in Sources */,
+				225ACC111EE9B1A663900E3315111D5C /* NBNRequestKit-dummy.m in Sources */,
+				7D70D1C36CB6096722FF4B5FBD118F44 /* RequestKitSession.swift in Sources */,
+				506DC80E524876C7CF80A352F357ED40 /* Router.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0307154FBA9089BC519C84674EE501A8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NBNRequestKit;
+			target = A8B6A54EEE25A9B9BCA3F14764837D72 /* NBNRequestKit */;
+			targetProxy = 078AD546EA8924A3E213E9E8DBE8CBDF /* PBXContainerItemProxy */;
+		};
+		21A0221C975631239CF9EA2D93171E72 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OctoKit.swift;
+			target = 7557E1AC034FC0E7900EC77FFA6B0363 /* OctoKit.swift */;
+			targetProxy = 8BCF7BF799D9AE10E427514EBC593F1E /* PBXContainerItemProxy */;
+		};
+		C93279D0DEFD106362FD3F4073FBE78D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NBNRequestKit;
+			target = A8B6A54EEE25A9B9BCA3F14764837D72 /* NBNRequestKit */;
+			targetProxy = 6DF97A021FE944A4F5BED0DCC6612384 /* PBXContainerItemProxy */;
+		};
+		CAE28AB8DC4062F8BB59C3C041125093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Highlightr;
+			target = A628900367039354E89F15E1A8D3BBFD /* Highlightr */;
+			targetProxy = CE0665C18DBE9936E7C61AD1FBE46C68 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08AE49D0DE6889743D2C334008673A26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC6E88515E0A01F1262EA2167AF5418A /* Pods-ios-github-browser.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29B8C86911865BC202210E8EEA4BCEA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80CB143A03423BBB19D63E646FC8ED36 /* Pods-ios-github-browser.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		36E03FE6B855DF724BACC84AA5FCE6C5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8816BFF6E69F8E225EF6E618D692C8A7 /* NBNRequestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NBNRequestKit/NBNRequestKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/RequestKit/NBNRequestKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RequestKit;
+				PRODUCT_NAME = NBNRequestKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4B3BE41B85BB77B38D35B9FE4B4DB468 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A876D8B3DF9E24B490D882B31AA8ED /* Highlightr.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Highlightr/Highlightr-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Highlightr/Highlightr.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Highlightr;
+				PRODUCT_NAME = Highlightr;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E75F86A0BFBA460B102652167246169 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98A876D8B3DF9E24B490D882B31AA8ED /* Highlightr.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/Highlightr/Highlightr-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Highlightr/Highlightr.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Highlightr;
+				PRODUCT_NAME = Highlightr;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A105C1752A0A49B30ED621B71E226CDB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AF4EDAEDB01683D1A40EA39ACE2C4A24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3C1A3DFF963C64D3D4862962E2333C /* OctoKit.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OctoKit.swift/OctoKit.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Octokit/OctoKit.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Octokit;
+				PRODUCT_NAME = OctoKit.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C1391485F05B41BD35738A433056B7FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		EE0B67EE46DE03BECD706B4122F3346F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8816BFF6E69F8E225EF6E618D692C8A7 /* NBNRequestKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/NBNRequestKit/NBNRequestKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/RequestKit/NBNRequestKit.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = RequestKit;
+				PRODUCT_NAME = NBNRequestKit;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0112428031F28D122ADDDF1BECD03C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED3C1A3DFF963C64D3D4862962E2333C /* OctoKit.swift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/OctoKit.swift/OctoKit.swift-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/Octokit/OctoKit.swift.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = Octokit;
+				PRODUCT_NAME = OctoKit.swift;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		179474AD5A8E5288ACF92B82039629FA /* Build configuration list for PBXNativeTarget "NBNRequestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE0B67EE46DE03BECD706B4122F3346F /* Debug */,
+				36E03FE6B855DF724BACC84AA5FCE6C5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2ECA776F19382A1777A9532158A92993 /* Build configuration list for PBXNativeTarget "Highlightr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E75F86A0BFBA460B102652167246169 /* Debug */,
+				4B3BE41B85BB77B38D35B9FE4B4DB468 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1391485F05B41BD35738A433056B7FA /* Debug */,
+				A105C1752A0A49B30ED621B71E226CDB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D3E2D84FC938F55C14460EE40E4EE69 /* Build configuration list for PBXNativeTarget "Pods-ios-github-browser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29B8C86911865BC202210E8EEA4BCEA5 /* Debug */,
+				08AE49D0DE6889743D2C334008673A26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9C979080812FDD19839B51A99BA96F3 /* Build configuration list for PBXNativeTarget "OctoKit.swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF4EDAEDB01683D1A40EA39ACE2C4A24 /* Debug */,
+				F0112428031F28D122ADDDF1BECD03C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

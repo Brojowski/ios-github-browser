@@ -1,0 +1,6 @@
+module Pods_ios_github_browser {
+  umbrella header "Pods-ios-github-browser-umbrella.h"
+
+  export *
+  module * { export * }
+}
