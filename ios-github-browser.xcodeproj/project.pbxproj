@@ -13,6 +13,22 @@
 		FA11C2292254668900A93500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA11C2272254668900A93500 /* Main.storyboard */; };
 		FA11C22B2254668C00A93500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA11C22A2254668C00A93500 /* Assets.xcassets */; };
 		FA11C22E2254668C00A93500 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */; };
+		FA657DD62256BCD900703AA0 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DC42256BCD800703AA0 /* Issue.swift */; };
+		FA657DD72256BCD900703AA0 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DC52256BCD800703AA0 /* Follow.swift */; };
+		FA657DD82256BCD900703AA0 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DC72256BCD800703AA0 /* PublicKey.swift */; };
+		FA657DD92256BCD900703AA0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DC82256BCD800703AA0 /* User.swift */; };
+		FA657DDA2256BCD900703AA0 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DC92256BCD800703AA0 /* File.swift */; };
+		FA657DDB2256BCD900703AA0 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCA2256BCD800703AA0 /* PullRequest.swift */; };
+		FA657DDC2256BCD900703AA0 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCB2256BCD800703AA0 /* Stars.swift */; };
+		FA657DDD2256BCD900703AA0 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCC2256BCD800703AA0 /* Time.swift */; };
+		FA657DDE2256BCD900703AA0 /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCD2256BCD800703AA0 /* URL+URLParameters.swift */; };
+		FA657DDF2256BCD900703AA0 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCE2256BCD800703AA0 /* Configuration.swift */; };
+		FA657DE02256BCD900703AA0 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DCF2256BCD800703AA0 /* Label.swift */; };
+		FA657DE22256BCD900703AA0 /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD12256BCD800703AA0 /* Octokit.swift */; };
+		FA657DE32256BCD900703AA0 /* Gist.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD22256BCD900703AA0 /* Gist.swift */; };
+		FA657DE42256BCD900703AA0 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD32256BCD900703AA0 /* Milestone.swift */; };
+		FA657DE52256BCD900703AA0 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD42256BCD900703AA0 /* Parameters.swift */; };
+		FA657DE62256BCD900703AA0 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD52256BCD900703AA0 /* Repositories.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +41,24 @@
 		FA11C22A2254668C00A93500 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA11C22D2254668C00A93500 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA11C22F2254668C00A93500 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA657DC42256BCD800703AA0 /* Issue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Issue.swift; path = octokit.swift/OctoKit/Issue.swift; sourceTree = SOURCE_ROOT; };
+		FA657DC52256BCD800703AA0 /* Follow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Follow.swift; path = octokit.swift/OctoKit/Follow.swift; sourceTree = SOURCE_ROOT; };
+		FA657DC62256BCD800703AA0 /* OctoKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OctoKit.h; path = octokit.swift/OctoKit/OctoKit.h; sourceTree = SOURCE_ROOT; };
+		FA657DC72256BCD800703AA0 /* PublicKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PublicKey.swift; path = octokit.swift/OctoKit/PublicKey.swift; sourceTree = SOURCE_ROOT; };
+		FA657DC82256BCD800703AA0 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = octokit.swift/OctoKit/User.swift; sourceTree = SOURCE_ROOT; };
+		FA657DC92256BCD800703AA0 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = File.swift; path = octokit.swift/OctoKit/File.swift; sourceTree = SOURCE_ROOT; };
+		FA657DCA2256BCD800703AA0 /* PullRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PullRequest.swift; path = octokit.swift/OctoKit/PullRequest.swift; sourceTree = SOURCE_ROOT; };
+		FA657DCB2256BCD800703AA0 /* Stars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stars.swift; path = octokit.swift/OctoKit/Stars.swift; sourceTree = SOURCE_ROOT; };
+		FA657DCC2256BCD800703AA0 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Time.swift; path = octokit.swift/OctoKit/Time.swift; sourceTree = SOURCE_ROOT; };
+		FA657DCD2256BCD800703AA0 /* URL+URLParameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "URL+URLParameters.swift"; path = "octokit.swift/OctoKit/URL+URLParameters.swift"; sourceTree = SOURCE_ROOT; };
+		FA657DCE2256BCD800703AA0 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = octokit.swift/OctoKit/Configuration.swift; sourceTree = SOURCE_ROOT; };
+		FA657DCF2256BCD800703AA0 /* Label.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Label.swift; path = octokit.swift/OctoKit/Label.swift; sourceTree = SOURCE_ROOT; };
+		FA657DD02256BCD800703AA0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = octokit.swift/OctoKit/Info.plist; sourceTree = SOURCE_ROOT; };
+		FA657DD12256BCD800703AA0 /* Octokit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Octokit.swift; path = octokit.swift/OctoKit/Octokit.swift; sourceTree = SOURCE_ROOT; };
+		FA657DD22256BCD900703AA0 /* Gist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Gist.swift; path = octokit.swift/OctoKit/Gist.swift; sourceTree = SOURCE_ROOT; };
+		FA657DD32256BCD900703AA0 /* Milestone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Milestone.swift; path = octokit.swift/OctoKit/Milestone.swift; sourceTree = SOURCE_ROOT; };
+		FA657DD42256BCD900703AA0 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = octokit.swift/OctoKit/Parameters.swift; sourceTree = SOURCE_ROOT; };
+		FA657DD52256BCD900703AA0 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repositories.swift; path = octokit.swift/OctoKit/Repositories.swift; sourceTree = SOURCE_ROOT; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -78,6 +112,24 @@
 		FA11C2222254668900A93500 /* ios-github-browser */ = {
 			isa = PBXGroup;
 			children = (
+				FA657DCE2256BCD800703AA0 /* Configuration.swift */,
+				FA657DC92256BCD800703AA0 /* File.swift */,
+				FA657DC52256BCD800703AA0 /* Follow.swift */,
+				FA657DD22256BCD900703AA0 /* Gist.swift */,
+				FA657DD02256BCD800703AA0 /* Info.plist */,
+				FA657DC42256BCD800703AA0 /* Issue.swift */,
+				FA657DCF2256BCD800703AA0 /* Label.swift */,
+				FA657DD32256BCD900703AA0 /* Milestone.swift */,
+				FA657DC62256BCD800703AA0 /* OctoKit.h */,
+				FA657DD12256BCD800703AA0 /* Octokit.swift */,
+				FA657DD42256BCD900703AA0 /* Parameters.swift */,
+				FA657DC72256BCD800703AA0 /* PublicKey.swift */,
+				FA657DCA2256BCD800703AA0 /* PullRequest.swift */,
+				FA657DD52256BCD900703AA0 /* Repositories.swift */,
+				FA657DCB2256BCD800703AA0 /* Stars.swift */,
+				FA657DCC2256BCD800703AA0 /* Time.swift */,
+				FA657DCD2256BCD800703AA0 /* URL+URLParameters.swift */,
+				FA657DC82256BCD800703AA0 /* User.swift */,
 				FA11C2232254668900A93500 /* AppDelegate.swift */,
 				FA11C2252254668900A93500 /* ViewController.swift */,
 				FA11C2272254668900A93500 /* Main.storyboard */,
@@ -167,12 +219,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Highlightr/Highlightr.framework",
+				"${BUILT_PRODUCTS_DIR}/NBNRequestKit/RequestKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Highlightr.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RequestKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -208,8 +262,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA657DD82256BCD900703AA0 /* PublicKey.swift in Sources */,
+				FA657DDC2256BCD900703AA0 /* Stars.swift in Sources */,
+				FA657DDD2256BCD900703AA0 /* Time.swift in Sources */,
 				FA11C2262254668900A93500 /* ViewController.swift in Sources */,
+				FA657DDB2256BCD900703AA0 /* PullRequest.swift in Sources */,
+				FA657DE62256BCD900703AA0 /* Repositories.swift in Sources */,
+				FA657DE32256BCD900703AA0 /* Gist.swift in Sources */,
+				FA657DE22256BCD900703AA0 /* Octokit.swift in Sources */,
+				FA657DE02256BCD900703AA0 /* Label.swift in Sources */,
+				FA657DE52256BCD900703AA0 /* Parameters.swift in Sources */,
+				FA657DDA2256BCD900703AA0 /* File.swift in Sources */,
+				FA657DDF2256BCD900703AA0 /* Configuration.swift in Sources */,
+				FA657DE42256BCD900703AA0 /* Milestone.swift in Sources */,
+				FA657DD92256BCD900703AA0 /* User.swift in Sources */,
 				FA11C2242254668900A93500 /* AppDelegate.swift in Sources */,
+				FA657DD72256BCD900703AA0 /* Follow.swift in Sources */,
+				FA657DD62256BCD900703AA0 /* Issue.swift in Sources */,
+				FA657DDE2256BCD900703AA0 /* URL+URLParameters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

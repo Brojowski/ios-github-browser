@@ -1,16 +1,20 @@
 PODS:
   - Highlightr (2.1.0)
+  - NBNRequestKit (2.2.0)
 
 DEPENDENCIES:
   - Highlightr (~> 2.1.0)
+  - NBNRequestKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Highlightr
+    - NBNRequestKit
 
 SPEC CHECKSUMS:
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
+  NBNRequestKit: 30c39d8e23e94f935bfc2a25789c44e4a6e1bfdd
 
-PODFILE CHECKSUM: 37b26d0b9d21d6d1f2cd2cc7531346495e1b3755
+PODFILE CHECKSUM: 932f7fb1f15d5e683ae22a207b24105a4a063f89
 
 COCOAPODS: 1.6.1
