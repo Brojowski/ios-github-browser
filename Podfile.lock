@@ -1,24 +1,16 @@
 PODS:
   - Highlightr (2.1.0)
-  - NBNRequestKit (2.2.0)
-  - OctoKit.swift (0.8.0):
-    - NBNRequestKit (~> 2.0)
 
 DEPENDENCIES:
   - Highlightr (~> 2.1.0)
-  - OctoKit.swift (~> 0.8.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Highlightr
-    - NBNRequestKit
-    - OctoKit.swift
 
 SPEC CHECKSUMS:
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
-  NBNRequestKit: 30c39d8e23e94f935bfc2a25789c44e4a6e1bfdd
-  OctoKit.swift: 2f51efbf888997fc625b91894777e76e9142d95b
 
-PODFILE CHECKSUM: 76626a7f0c1f7d227e73f4ef2bbb6010cf7db92b
+PODFILE CHECKSUM: 37b26d0b9d21d6d1f2cd2cc7531346495e1b3755
 
 COCOAPODS: 1.6.1

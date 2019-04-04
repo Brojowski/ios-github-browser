@@ -1,0 +1,3 @@
+[submodule "octokit.swift"]
+	path = octokit.swift
+	url = git@github.com:nerdishbynature/octokit.swift.git
