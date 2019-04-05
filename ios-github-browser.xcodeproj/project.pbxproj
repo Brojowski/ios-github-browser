@@ -29,6 +29,7 @@
 		FA657DE42256BCD900703AA0 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD32256BCD900703AA0 /* Milestone.swift */; };
 		FA657DE52256BCD900703AA0 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD42256BCD900703AA0 /* Parameters.swift */; };
 		FA657DE62256BCD900703AA0 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD52256BCD900703AA0 /* Repositories.swift */; };
+		FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DE72257082600703AA0 /* ConfigViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		FA657DD32256BCD900703AA0 /* Milestone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Milestone.swift; path = octokit.swift/OctoKit/Milestone.swift; sourceTree = SOURCE_ROOT; };
 		FA657DD42256BCD900703AA0 /* Parameters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Parameters.swift; path = octokit.swift/OctoKit/Parameters.swift; sourceTree = SOURCE_ROOT; };
 		FA657DD52256BCD900703AA0 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repositories.swift; path = octokit.swift/OctoKit/Repositories.swift; sourceTree = SOURCE_ROOT; };
+		FA657DE72257082600703AA0 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -131,9 +133,10 @@
 				FA657DCD2256BCD800703AA0 /* URL+URLParameters.swift */,
 				FA657DC82256BCD800703AA0 /* User.swift */,
 				FA11C2232254668900A93500 /* AppDelegate.swift */,
-				FA11C2252254668900A93500 /* ViewController.swift */,
 				FA11C2272254668900A93500 /* Main.storyboard */,
 				FA11C22A2254668C00A93500 /* Assets.xcassets */,
+				FA11C2252254668900A93500 /* ViewController.swift */,
+				FA657DE72257082600703AA0 /* ConfigViewController.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 			);
@@ -280,6 +283,7 @@
 				FA657DD72256BCD900703AA0 /* Follow.swift in Sources */,
 				FA657DD62256BCD900703AA0 /* Issue.swift in Sources */,
 				FA657DDE2256BCD900703AA0 /* URL+URLParameters.swift in Sources */,
+				FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
