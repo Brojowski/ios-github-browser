@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Gist View Controller-->
         <scene sceneID="L36-bh-DUs">
             <objects>
-                <tableViewController id="NtJ-BP-q2e" sceneMemberID="viewController">
+                <tableViewController id="NtJ-BP-q2e" customClass="GistViewController" customModule="ios_github_browser" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cxh-0i-wLQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -40,6 +40,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="projectSelector" destination="cxh-0i-wLQ" id="7Cv-Tf-vpI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wT8-BA-Zjn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

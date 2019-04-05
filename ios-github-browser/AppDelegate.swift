@@ -16,6 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        usePropertyList()
+        
         return true
     }
 
@@ -41,6 +44,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func loadPL() -> [String: AnyObject] {
+        let pl = Bundle.main.path(forResource: "gist_list", ofType: ".plist")
+        
+        let dict = NSDictionary(contentsOfFile: pl!) as? Dictionary<String, AnyObject>
+        
+        return dict!
+    }
+    
+    func savePL(dict : [String: AnyObject]) {
+        let pl = Bundle.main.path(forResource: "gist_list", ofType: ".plist")
+        
+        let nsd : NSDictionary = dict as NSDictionary
+        nsd.write(toFile: pl!, atomically: true)
+    }
+    
+    func output(dict : [String : AnyObject], message msg: String) {
+        for(key, value) in dict {
+            print("\(msg) \(key) - \(value)")
+        }
+    }
+    
+    func usePropertyList() {
+        // Load the property list and output is contents
+        var dict = loadPL()
+        output(dict: dict, message: "Gists: ")
+    }
 }
 

@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:ios-github-browser/GistViewController.swift">
+   </FileRef>
+   <FileRef
       location = "group:ios-github-browser.xcodeproj">
    </FileRef>
    <FileRef
