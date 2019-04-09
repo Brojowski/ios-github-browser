@@ -11,6 +11,7 @@ import UIKit
 class ConfigViewController: UIViewController {
     @IBOutlet weak var ownerField: UITextField!
     @IBOutlet weak var gistIdField: UITextField!
+    @IBOutlet weak var gistNameField: UITextField!
     
     static let gistLinkRegex: String = "gist.github.com\\/([^\\/]+)\\/(.+)$"
     
@@ -24,11 +25,47 @@ class ConfigViewController: UIViewController {
         
         let regex = try? NSRegularExpression(pattern: ConfigViewController.gistLinkRegex, options: .caseInsensitive)
         let match = regex?.firstMatch(in: link, options: [], range: NSRange(location: 0, length: link.count))
-
+        
+        if match == nil {
+            return
+        }
+        
         let owner = link[Range((match?.range(at: 1))!, in: link)!]
         let gistId = link[Range((match?.range(at: 2))!, in: link)!]
 
         ownerField.text = String(owner)
         gistIdField.text = String(gistId)
+    }
+    
+    @IBAction func onAddGist(_ sender: UIButton) {
+        let owner = ownerField.text
+        let gistId = gistIdField.text
+        let name = gistNameField.text
+        
+        if owner.isNilOrEmpty() {
+            print("\(owner)")
+        }
+        
+        if gistId.isNilOrEmpty() {
+            print("\(gistId)")
+        }
+        
+        if name.isNilOrEmpty() {
+            print("\(name)")
+        }
+        
+        
+    }
+}
+
+extension String {
+    func isNilOrEmpty() -> Bool {
+        return self.isEmpty
+    }
+}
+
+extension Optional where Wrapped == String {
+    func isNilOrEmpty() -> Bool {
+        return self?.isEmpty ?? true
     }
 }

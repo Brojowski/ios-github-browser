@@ -30,7 +30,7 @@
 		FA657DE62256BCD900703AA0 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DD52256BCD900703AA0 /* Repositories.swift */; };
 		FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DE72257082600703AA0 /* ConfigViewController.swift */; };
 		FA657DEA2257156100703AA0 /* gist_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA657DE92257156100703AA0 /* gist_list.plist */; };
-		FA657DEC2257184100703AA0 /* GistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DEB2257184100703AA0 /* GistViewController.swift */; };
+		FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DED225D53D700703AA0 /* GistTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +62,7 @@
 		FA657DD52256BCD900703AA0 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Repositories.swift; path = octokit.swift/OctoKit/Repositories.swift; sourceTree = SOURCE_ROOT; };
 		FA657DE72257082600703AA0 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		FA657DE92257156100703AA0 /* gist_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = gist_list.plist; sourceTree = "<group>"; };
-		FA657DEB2257184100703AA0 /* GistViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GistViewController.swift; sourceTree = "<group>"; };
+		FA657DED225D53D700703AA0 /* GistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTableViewController.swift; sourceTree = "<group>"; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,8 +137,8 @@
 				FA11C2232254668900A93500 /* AppDelegate.swift */,
 				FA11C2272254668900A93500 /* Main.storyboard */,
 				FA11C22A2254668C00A93500 /* Assets.xcassets */,
-				FA657DEB2257184100703AA0 /* GistViewController.swift */,
 				FA657DE72257082600703AA0 /* ConfigViewController.swift */,
+				FA657DED225D53D700703AA0 /* GistTableViewController.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 				FA657DE92257156100703AA0 /* gist_list.plist */,
@@ -270,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA657DD82256BCD900703AA0 /* PublicKey.swift in Sources */,
+				FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */,
 				FA657DDC2256BCD900703AA0 /* Stars.swift in Sources */,
 				FA657DDD2256BCD900703AA0 /* Time.swift in Sources */,
 				FA657DDB2256BCD900703AA0 /* PullRequest.swift in Sources */,
@@ -286,7 +287,6 @@
 				FA657DD72256BCD900703AA0 /* Follow.swift in Sources */,
 				FA657DD62256BCD900703AA0 /* Issue.swift in Sources */,
 				FA657DDE2256BCD900703AA0 /* URL+URLParameters.swift in Sources */,
-				FA657DEC2257184100703AA0 /* GistViewController.swift in Sources */,
 				FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
