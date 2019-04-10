@@ -45,20 +45,17 @@ class FilesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "fileIdentifier", for: indexPath)
 
-        
+
         cell.textLabel?.text = _files[indexPath.row].filename
 
         return cell
     }
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let codeVC = segue.destination as! CodeViewController
+        codeVC.file = _files[tableView.indexPathForSelectedRow!.row]
     }
-    */
 
 }

@@ -32,6 +32,7 @@
 		FA657DEA2257156100703AA0 /* gist_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA657DE92257156100703AA0 /* gist_list.plist */; };
 		FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DED225D53D700703AA0 /* GistTableViewController.swift */; };
 		FA657DF2225D62A900703AA0 /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */; };
+		FA7A5024225D7A89001AA4D6 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		FA657DE92257156100703AA0 /* gist_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = gist_list.plist; sourceTree = "<group>"; };
 		FA657DED225D53D700703AA0 /* GistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTableViewController.swift; sourceTree = "<group>"; };
 		FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
+		FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,6 +144,7 @@
 				FA657DE72257082600703AA0 /* ConfigViewController.swift */,
 				FA657DED225D53D700703AA0 /* GistTableViewController.swift */,
 				FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */,
+				FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 				FA657DE92257156100703AA0 /* gist_list.plist */,
@@ -287,6 +290,7 @@
 				FA657DDF2256BCD900703AA0 /* Configuration.swift in Sources */,
 				FA657DE42256BCD900703AA0 /* Milestone.swift in Sources */,
 				FA657DD92256BCD900703AA0 /* User.swift in Sources */,
+				FA7A5024225D7A89001AA4D6 /* CodeViewController.swift in Sources */,
 				FA11C2242254668900A93500 /* AppDelegate.swift in Sources */,
 				FA657DD72256BCD900703AA0 /* Follow.swift in Sources */,
 				FA657DD62256BCD900703AA0 /* Issue.swift in Sources */,

@@ -175,6 +175,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Bt0-mG-iuC" kind="show" id="RIx-YT-aja"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -186,6 +189,49 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f6G-xk-WWW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3029" y="81"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="Urg-HP-34V">
+            <objects>
+                <viewController id="Bt0-mG-iuC" customClass="CodeViewController" customModule="ios_github_browser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWz-Bt-1Dq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2X-fb-GvN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgQ-To-XdQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cgQ-To-XdQ" firstAttribute="top" secondItem="K2X-fb-GvN" secondAttribute="top" id="Yba-le-Col"/>
+                                    <constraint firstItem="cgQ-To-XdQ" firstAttribute="leading" secondItem="K2X-fb-GvN" secondAttribute="leading" id="tSH-4C-nSX"/>
+                                    <constraint firstAttribute="trailing" secondItem="cgQ-To-XdQ" secondAttribute="trailing" id="ulr-1G-g5o"/>
+                                    <constraint firstAttribute="bottom" secondItem="cgQ-To-XdQ" secondAttribute="bottom" id="yN8-nn-7mb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="K2X-fb-GvN" firstAttribute="top" secondItem="jJL-Nk-p4d" secondAttribute="top" id="CHu-xd-ZYw"/>
+                            <constraint firstItem="jJL-Nk-p4d" firstAttribute="bottom" secondItem="K2X-fb-GvN" secondAttribute="bottom" id="DS2-WJ-kv0"/>
+                            <constraint firstItem="jJL-Nk-p4d" firstAttribute="trailing" secondItem="K2X-fb-GvN" secondAttribute="trailing" id="Hqb-Xj-Wrp"/>
+                            <constraint firstItem="K2X-fb-GvN" firstAttribute="leading" secondItem="jJL-Nk-p4d" secondAttribute="leading" id="pvC-LI-YJN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jJL-Nk-p4d"/>
+                    </view>
+                    <connections>
+                        <outlet property="codeView" destination="cgQ-To-XdQ" id="3Te-T6-kkj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2uc-QP-MkM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3948" y="80.50974512743629"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="3px-yj-Bzm">
