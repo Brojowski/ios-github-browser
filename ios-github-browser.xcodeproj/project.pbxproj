@@ -31,6 +31,7 @@
 		FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DE72257082600703AA0 /* ConfigViewController.swift */; };
 		FA657DEA2257156100703AA0 /* gist_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA657DE92257156100703AA0 /* gist_list.plist */; };
 		FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DED225D53D700703AA0 /* GistTableViewController.swift */; };
+		FA657DF2225D62A900703AA0 /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		FA657DE72257082600703AA0 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
 		FA657DE92257156100703AA0 /* gist_list.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = gist_list.plist; sourceTree = "<group>"; };
 		FA657DED225D53D700703AA0 /* GistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTableViewController.swift; sourceTree = "<group>"; };
+		FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -139,6 +141,7 @@
 				FA11C22A2254668C00A93500 /* Assets.xcassets */,
 				FA657DE72257082600703AA0 /* ConfigViewController.swift */,
 				FA657DED225D53D700703AA0 /* GistTableViewController.swift */,
+				FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 				FA657DE92257156100703AA0 /* gist_list.plist */,
@@ -276,6 +279,7 @@
 				FA657DDB2256BCD900703AA0 /* PullRequest.swift in Sources */,
 				FA657DE62256BCD900703AA0 /* Repositories.swift in Sources */,
 				FA657DE32256BCD900703AA0 /* Gist.swift in Sources */,
+				FA657DF2225D62A900703AA0 /* FilesTableViewController.swift in Sources */,
 				FA657DE22256BCD900703AA0 /* Octokit.swift in Sources */,
 				FA657DE02256BCD900703AA0 /* Label.swift in Sources */,
 				FA657DE52256BCD900703AA0 /* Parameters.swift in Sources */,
