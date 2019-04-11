@@ -41,8 +41,8 @@ class GistTableViewController: UITableViewController {
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let filesVC = segue.destination as! FilesTableViewController
-        filesVC.gistId = gists[tableView.indexPathForSelectedRow!.row].id
+        let filesVC = segue.destination as? FilesTableViewController
+        filesVC?.gistId = gists[tableView.indexPathForSelectedRow!.row].id
     }
 
 }
