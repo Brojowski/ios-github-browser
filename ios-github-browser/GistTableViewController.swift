@@ -9,6 +9,9 @@
 import UIKit
 
 class GistTableViewController: UITableViewController {
+    
+    //array of dictionaries
+    var gistsArray = [[Gists]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
