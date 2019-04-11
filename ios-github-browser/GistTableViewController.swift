@@ -16,6 +16,7 @@ class GistTableViewController: UITableViewController {
         super.viewDidLoad()
 
         gists = (UIApplication.shared.delegate as? AppDelegate)?.getGists() ?? [GistSerializable]()
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
