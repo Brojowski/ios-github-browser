@@ -34,6 +34,7 @@
 		FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DED225D53D700703AA0 /* GistTableViewController.swift */; };
 		FA657DF2225D62A900703AA0 /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */; };
 		FA7A5024225D7A89001AA4D6 /* CodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */; };
+		FA7A5026225D9331001AA4D6 /* GistSerializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7A5025225D9331001AA4D6 /* GistSerializable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		FA657DED225D53D700703AA0 /* GistTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistTableViewController.swift; sourceTree = "<group>"; };
 		FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
 		FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeViewController.swift; sourceTree = "<group>"; };
+		FA7A5025225D9331001AA4D6 /* GistSerializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistSerializable.swift; sourceTree = "<group>"; };
 		FA7A628DC1ED0E6F79682A95 /* Pods-ios-github-browser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.release.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -148,6 +150,7 @@
 				A3A7FE89225FA6DB009D5463 /* GistClass.swift */,
 				FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */,
 				FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */,
+				FA7A5025225D9331001AA4D6 /* GistSerializable.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 				FA657DE92257156100703AA0 /* gist_list.plist */,
@@ -300,6 +303,7 @@
 				FA657DD62256BCD900703AA0 /* Issue.swift in Sources */,
 				FA657DDE2256BCD900703AA0 /* URL+URLParameters.swift in Sources */,
 				FA657DE82257082600703AA0 /* ConfigViewController.swift in Sources */,
+				FA7A5026225D9331001AA4D6 /* GistSerializable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

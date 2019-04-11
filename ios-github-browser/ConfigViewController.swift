@@ -54,7 +54,8 @@ class ConfigViewController: UIViewController {
             print("\(name)")
         }
         
-        
+        let gist = GistSerializable(owner: owner!, id: gistId!, name: name!)
+        (UIApplication.shared.delegate as? AppDelegate)?.saveGist(gist: gist)
     }
 }
 
