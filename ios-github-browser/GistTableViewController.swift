@@ -17,6 +17,7 @@ class GistTableViewController: UITableViewController {
         super.viewDidLoad()
 
         gists = (UIApplication.shared.delegate as? AppDelegate)?.getGists() ?? [GistSerializable]()
+        tableView.reloadData()
     }
 
     // MARK: - Table view data source
@@ -43,7 +44,7 @@ class GistTableViewController: UITableViewController {
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filesVC = segue.destination as? FilesTableViewController
-        filesVC?.gistId = gists[tableView.indexPathForSelectedRow!.row].id
+        filesVC?.gist = gists[tableView.indexPathForSelectedRow!.row]
     }
 
 }

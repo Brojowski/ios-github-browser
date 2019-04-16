@@ -12,10 +12,12 @@ class FilesTableViewController: UITableViewController {
 
     private var _files = [File]()
     
-    var gistId = "9889f67a8bb51e345c4c304525b62f7d"
+    weak var gist: GistSerializable!
     
     override func viewDidLoad() {
-        Octokit().gist(id: gistId) {res in
+        self.navigationItem.title = gist.name
+        
+        Octokit().gist(id: gist.id) {res in
             switch (res) {
             case .success(let gist):
                 self._files = Array(gist.files.values)
