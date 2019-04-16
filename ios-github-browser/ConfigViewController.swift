@@ -15,9 +15,11 @@ class ConfigViewController: UIViewController {
     
     static let gistLinkRegex: String = "gist.github.com\\/([^\\/]+)\\/(.+)$"
     
+    
+    var gistArray = [GistSerializable]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
     
     @IBAction func onLinkChanged(_ sender: UITextField) {
@@ -37,26 +39,51 @@ class ConfigViewController: UIViewController {
         gistIdField.text = String(gistId)
     }
     
+    func archiveGists(gists: [GistSerializable]) {
+        let encodedData: Data = try! NSKeyedArchiver.archivedData(withRootObject: gists, requiringSecureCoding: false)
+        UserDefaults.standard.set(encodedData, forKey: "encodedGists")
+        UserDefaults.standard.synchronize()
+        
+        print("succesfully archived the array(I think lol)")
+        print("Printing encoded gists", UserDefaults.standard.object(forKey: "encodedGists") as Any)
+    }
+    
     @IBAction func onAddGist(_ sender: UIButton) {
         let owner = ownerField.text
         let gistId = gistIdField.text
         let name = gistNameField.text
         
-        if owner.isNilOrEmpty() {
-            print("\(owner)")
-        }
         
-        if gistId.isNilOrEmpty() {
-            print("\(gistId)")
-        }
         
-        if name.isNilOrEmpty() {
-            print("\(name)")
-        }
+        print("New entry: \(owner) the id: \(gistId) the name: \(name)")
         
-        let gist = GistSerializable(owner: owner!, id: gistId!, name: name!)
-        (UIApplication.shared.delegate as? AppDelegate)?.saveGist(gist: gist)
+        gistArray.append(GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? " "))
+        archiveGists(gists: gistArray)
+//        if owner.isNilOrEmpty() {
+//            print("\(owner)")
+//        }
+//
+//        if gistId.isNilOrEmpty() {
+//            print("\(gistId)")
+//        }
+//
+//        if name.isNilOrEmpty() {
+//            print("\(name)")
+//        }
+//        print(owner!, gistId!, name!)
+//        let gist = GistSerializable(owner: owner!, id: gistId!, name: name!)
+//        print("gist is:", gist)
+//        (UIApplication.shared.delegate as? AppDelegate)?.saveGist(gist: gist)
     }
+    
+    
+    @IBAction func printGists(_ sender: UIButton) {
+        let decoded = UserDefaults.standard.data(forKey: "encodedGists")
+        let decodedTeams = NSKeyedUnarchiver.unarchiveObject(with: decoded!) as! [GistSerializable]
+        print(decodedTeams)
+        
+    }
+    
 }
 
 extension String {

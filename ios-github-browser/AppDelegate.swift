@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func getGists() -> [GistSerializable] {
         let pl = Bundle.main.path(forResource: "gist_list", ofType: ".plist")
         
-        let dict = NSDictionary(contentsOfFile: pl!) as? Dictionary<String, AnyObject>
+        let dict = NSDictionary(contentsOfFile: pl!) as? [NSString: AnyObject]
         
         let rawGists = dict!["gists"] as! [[String: String]]
         let gists = rawGists.map { rg in

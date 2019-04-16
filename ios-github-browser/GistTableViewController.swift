@@ -10,8 +10,6 @@ import UIKit
 
 class GistTableViewController: UITableViewController {
     
-    //array of dictionaries
-    var gistsArray = [[Gists]]()
 
     private var gists = [GistSerializable]()
     
