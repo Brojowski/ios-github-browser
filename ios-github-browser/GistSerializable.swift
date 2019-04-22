@@ -9,6 +9,7 @@
 import Foundation
 
 class GistSerializable: NSObject, NSCoding {
+    
     func encode(with aCoder: NSCoder) {
         
         //encode the owner
@@ -23,6 +24,8 @@ class GistSerializable: NSObject, NSCoding {
         } else {
             aCoder.encode(name, forKey: "name")
         }
+        
+        aCoder.encode(_storage, forKey: "storage")
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -31,6 +34,13 @@ class GistSerializable: NSObject, NSCoding {
         owner = (aDecoder.decodeObject(forKey: "owner") as? String)!
         id = (aDecoder.decodeObject(forKey: "gistID") as? String)!
         name = (aDecoder.decodeObject(forKey: "name") as? String)!
+        print("Decoder ran")
+        print(">>>owner:   \(owner)")
+        print(">>>ID: \(id)")
+        print(">>>Name:   \(name)")
+        
+        _storage = (aDecoder.decodeObject(forKey: "storage") as? [String: String])!
+        print(">>>>>>Storage: ", _storage)
     }
     
     

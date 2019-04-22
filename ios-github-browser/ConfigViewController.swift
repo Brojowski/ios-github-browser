@@ -53,9 +53,7 @@ class ConfigViewController: UIViewController {
         let gistId = gistIdField.text
         let name = gistNameField.text
         
-        
-        
-        print("New entry: \(owner) the id: \(gistId) the name: \(name)")
+        print("New entry: \(owner ?? " ") the id: \(gistId ?? " ") the name: \(name ?? " ")")
         
         gistArray.append(GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? " "))
         archiveGists(gists: gistArray)

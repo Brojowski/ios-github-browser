@@ -19,6 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         outputGists()
         
+        let rootViewController = application.windows.first?.rootViewController
+            as! UINavigationController
+        let GistTableViewController = rootViewController.viewControllers.first
+            as! GistTableViewController
+        
+        // Will fail when the app starts for the first time.
+        _ = GistTableViewController.load()
+        
+        
         return true
     }
 
@@ -30,10 +39,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        
+        let rootVC = application.windows.first?.rootViewController as! UINavigationController
+        let tableVC = rootVC.viewControllers.first as! GistTableViewController
+        tableVC.save()
+        
+        let rootViewController = application.windows.first?.rootViewController
+            as! UINavigationController
+        let GistTableViewController = rootViewController.viewControllers.first
+            as! GistTableViewController
+        GistTableViewController.save()
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+        
+        let rootViewController = application.windows.first?.rootViewController
+            as! UINavigationController
+        let GistTableViewController = rootViewController.viewControllers.first
+            as! GistTableViewController
+        let success = GistTableViewController.load()
+        if  !success {
+            print(">>>>>>>>Saved data load failed.")
+        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
