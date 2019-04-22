@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lhm-pH-5vS">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lhm-pH-5vS">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -46,7 +46,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="Tg5-RE-tTv">
-                        <barButtonItem key="rightBarButtonItem" systemItem="bookmarks" id="D8c-YJ-fmd">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="D8c-YJ-fmd">
                             <connections>
                                 <segue destination="5ba-2A-Dal" kind="show" id="tPr-Gm-M4P"/>
                             </connections>
@@ -130,14 +130,6 @@
                                 <state key="normal" title="Add"/>
                                 <connections>
                                     <action selector="onAddGist:" destination="5ba-2A-Dal" eventType="touchUpInside" id="LFN-UE-Z8A"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEO-vu-p8a">
-                                <rect key="frame" x="102" y="411" width="171" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Print Archived Array"/>
-                                <connections>
-                                    <action selector="printGists:" destination="5ba-2A-Dal" eventType="touchUpInside" id="8YC-VZ-fvD"/>
                                 </connections>
                             </button>
                         </subviews>

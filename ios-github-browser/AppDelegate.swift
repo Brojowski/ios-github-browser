@@ -17,17 +17,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        outputGists()
-        
-        let rootViewController = application.windows.first?.rootViewController
-            as! UINavigationController
-        let GistTableViewController = rootViewController.viewControllers.first
-            as! GistTableViewController
-        
-        // Will fail when the app starts for the first time.
-        _ = GistTableViewController.load()
-        
-        
         return true
     }
 
@@ -42,26 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let rootVC = application.windows.first?.rootViewController as! UINavigationController
         let tableVC = rootVC.viewControllers.first as! GistTableViewController
-        tableVC.save()
-        
-        let rootViewController = application.windows.first?.rootViewController
-            as! UINavigationController
-        let GistTableViewController = rootViewController.viewControllers.first
-            as! GistTableViewController
-        GistTableViewController.save()
+        save(gists: tableVC.gists)
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
         // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
-        
-        let rootViewController = application.windows.first?.rootViewController
-            as! UINavigationController
-        let GistTableViewController = rootViewController.viewControllers.first
-            as! GistTableViewController
-        let success = GistTableViewController.load()
-        if  !success {
-            print(">>>>>>>>Saved data load failed.")
-        }
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
@@ -71,46 +45,57 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-    func getGists() -> [GistSerializable] {
-        let pl = Bundle.main.path(forResource: "gist_list", ofType: ".plist")
+    
+    func getArchiveURL () -> NSURL {
+        // Get the default file manager
+        let fileManager = FileManager()// NSFileManager.defaultManager()
         
-        let dict = NSDictionary(contentsOfFile: pl!) as? [NSString: AnyObject]
+        // Get an array of URLs
+        let urls = fileManager.urls(for: .documentDirectory,
+                                    in: .userDomainMask)
         
-        let rawGists = dict!["gists"] as! [[String: String]]
-        let gists = rawGists.map { rg in
-            return GistSerializable(dict: rg)
-        }
+        // Get the document directory
+        let documentDirectory = urls.last
+        let fileWithPath = documentDirectory?.appendingPathComponent("archive.data")
         
-        return gists
+        return fileWithPath! as NSURL
     }
     
-    private func saveGists(gists : GistSerializable) {
-        let pl = Bundle.main.path(forResource: "gist_list", ofType: ".plist")
+    func save(gists: [GistSerializable]) {
+        // Get the file to save the archive to
+        //let archiveFile = MainTableViewController.archiveURL.path
+        let archiveFile = getArchiveURL().path!
         
-        /*let gDicts = gists.map { g in
-            return g.serialize() as NSDictionary
+        
+        // Do the archiving
+        let success = NSKeyedArchiver.archiveRootObject(gists, toFile: archiveFile)
+        
+        if !success {
+            print(">>> Archive failed.")
         }
-        
-        var dict = NSMutableDictionary()
-        dict.setValue("gists", gDicts as NSArray)
-        */
- 
-        let nsd : NSDictionary = gists.serialize() as NSDictionary
-        nsd.write(toFile: pl!, atomically: true)
     }
     
-    func saveGist(gist: GistSerializable) {
-        var gists = getGists()
-        gists.append(gist)
-        saveGists(gists: gist)
-    }
-    
-    func outputGists() {
-        let gists = getGists()
-        for g in gists {
-            print("{ \n\to: \(g.owner) \n\tid: \(g.id) \n\tn: \(g.name) \n}")
+    func load() -> [GistSerializable] {
+        // Get the file to save the archive to
+        //let archiveFile = MainTableViewController.archiveURL.path
+        let archiveFile = getArchiveURL().path!
+        
+        // The file will not exist the first time the app is run
+        guard FileManager().fileExists(atPath: archiveFile) else {
+            print(">>> Does not exist: \(archiveFile)")
+            return [GistSerializable]()
         }
+        
+        // Get the archived data
+        let unArchivedData = NSKeyedUnarchiver.unarchiveObject(withFile: archiveFile)
+        let unArchivedGists = unArchivedData as? [GistSerializable]
+        
+        guard unArchivedGists != nil else {
+            return [GistSerializable]()
+        }
+        
+        // Restore the Gists
+        return unArchivedGists!
     }
 }
 

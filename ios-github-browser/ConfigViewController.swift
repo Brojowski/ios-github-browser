@@ -16,8 +16,6 @@ class ConfigViewController: UIViewController {
     static let gistLinkRegex: String = "gist.github.com\\/([^\\/]+)\\/(.+)$"
     
     
-    var gistArray = [GistSerializable]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -54,34 +52,11 @@ class ConfigViewController: UIViewController {
         let name = gistNameField.text
         
         print("New entry: \(owner ?? " ") the id: \(gistId ?? " ") the name: \(name ?? " ")")
-        
-        gistArray.append(GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? " "))
-        archiveGists(gists: gistArray)
-//        if owner.isNilOrEmpty() {
-//            print("\(owner)")
-//        }
-//
-//        if gistId.isNilOrEmpty() {
-//            print("\(gistId)")
-//        }
-//
-//        if name.isNilOrEmpty() {
-//            print("\(name)")
-//        }
-//        print(owner!, gistId!, name!)
-//        let gist = GistSerializable(owner: owner!, id: gistId!, name: name!)
-//        print("gist is:", gist)
-//        (UIApplication.shared.delegate as? AppDelegate)?.saveGist(gist: gist)
+
+        let gistVC = navigationController?.viewControllers[(navigationController?.viewControllers.count)!-2] as! GistTableViewController
+        gistVC.addGist(gist: GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? " "))
+        _ = navigationController?.popViewController(animated: true)
     }
-    
-    
-    @IBAction func printGists(_ sender: UIButton) {
-        let decoded = UserDefaults.standard.data(forKey: "encodedGists")
-        let decodedTeams = NSKeyedUnarchiver.unarchiveObject(with: decoded!) as! [GistSerializable]
-        print(decodedTeams)
-        
-    }
-    
 }
 
 extension String {

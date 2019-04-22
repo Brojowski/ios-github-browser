@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		33927D3E74849B2FDF028B97 /* Pods_ios_github_browser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFFC74469097B21ABFCCCC1F /* Pods_ios_github_browser.framework */; };
-		A3775D1C226DEA5700D50EFB /* GistsArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3775D1B226DEA5700D50EFB /* GistsArray.swift */; };
 		FA11C2242254668900A93500 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11C2232254668900A93500 /* AppDelegate.swift */; };
 		FA11C2292254668900A93500 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA11C2272254668900A93500 /* Main.storyboard */; };
 		FA11C22B2254668C00A93500 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA11C22A2254668C00A93500 /* Assets.xcassets */; };
@@ -39,7 +38,6 @@
 
 /* Begin PBXFileReference section */
 		8E75D56E3592E6730E56AAE1 /* Pods-ios-github-browser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-github-browser.debug.xcconfig"; path = "Target Support Files/Pods-ios-github-browser/Pods-ios-github-browser.debug.xcconfig"; sourceTree = "<group>"; };
-		A3775D1B226DEA5700D50EFB /* GistsArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistsArray.swift; sourceTree = "<group>"; };
 		AFFC74469097B21ABFCCCC1F /* Pods_ios_github_browser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ios_github_browser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA11C2202254668900A93500 /* ios-github-browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-github-browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA11C2232254668900A93500 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				FA657DF1225D62A900703AA0 /* FilesTableViewController.swift */,
 				FA7A5023225D7A89001AA4D6 /* CodeViewController.swift */,
 				FA7A5025225D9331001AA4D6 /* GistSerializable.swift */,
-				A3775D1B226DEA5700D50EFB /* GistsArray.swift */,
 				FA11C22C2254668C00A93500 /* LaunchScreen.storyboard */,
 				FA11C22F2254668C00A93500 /* Info.plist */,
 				FA657DE92257156100703AA0 /* gist_list.plist */,
@@ -281,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3775D1C226DEA5700D50EFB /* GistsArray.swift in Sources */,
 				FA657DD82256BCD900703AA0 /* PublicKey.swift in Sources */,
 				FA657DEE225D53D700703AA0 /* GistTableViewController.swift in Sources */,
 				FA657DDC2256BCD900703AA0 /* Stars.swift in Sources */,

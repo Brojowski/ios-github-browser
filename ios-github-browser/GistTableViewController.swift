@@ -11,12 +11,15 @@ import UIKit
 class GistTableViewController: UITableViewController {
     
     var loadSaveCounter = 0
-    var GistsArray = [GistSerializable]()
+    var gists = [GistSerializable]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        GistsArray = (UIApplication.shared.delegate as? AppDelegate)?.getGists() ?? [GistSerializable]()
+        self.navigationItem.title = "Gists"
+
+        
+        gists = (UIApplication.shared.delegate as? AppDelegate)?.load() ?? [GistSerializable]()
         tableView.reloadData()
     }
 
@@ -29,92 +32,38 @@ class GistTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return GistsArray.count
+        return gists.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "gistIdentifier", for: indexPath)
 
-        cell.textLabel?.text = GistsArray[indexPath.row].name
+        cell.textLabel?.text = gists[indexPath.row].name
 
         return cell
     }
 
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        
+        let delete = UITableViewRowAction(style: .destructive, title: "Delete") { (action, indexPath) in
+            // delete item at indexPath
+            self.gists.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    
+        return [delete]
+        
+    }
+    
     // MARK: - Navigation
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let filesVC = segue.destination as? FilesTableViewController
-        filesVC?.gist = GistsArray[tableView.indexPathForSelectedRow!.row]
+        filesVC?.gist = gists[tableView.indexPathForSelectedRow!.row]
     }
     
-    func getArchiveURL () -> NSURL {
-        // Get the default file manager
-        let fileManager = FileManager()// NSFileManager.defaultManager()
-        
-        // Get an array of URLs
-        let urls = fileManager.urls(for: .documentDirectory,
-                                    in: .userDomainMask)
-        
-        // Get the document directory
-        let documentDirectory = urls.last
-        let fileWithPath = documentDirectory?.appendingPathComponent("archive.data")
-        
-        // Debug output
-        print(">>>Document Directory: \(documentDirectory!)")
-        
-        return fileWithPath! as NSURL
+    func addGist(gist: GistSerializable) {
+        gists.append(gist)
+        tableView.reloadData()
     }
-    
-    func save() {
-        // Get the file to save the archive to
-        //let archiveFile = MainTableViewController.archiveURL.path
-        let archiveFile = getArchiveURL().path!
-        
-        //Debugging
-        print(">>> save: \(loadSaveCounter) \(archiveFile)")
-        
-        // Do the archiving
-        let success = NSKeyedArchiver.archiveRootObject(GistsArray,
-                                                        toFile: archiveFile)
-        
-        if !success {
-            print(">>> Archive failed.")
-        }
-        
-        // Debugging
-        loadSaveCounter += 1
-    }
-    
-    func load() -> Bool {
-        // Get the file to save the archive to
-        //let archiveFile = MainTableViewController.archiveURL.path
-        let archiveFile = getArchiveURL().path!
-        
-        // The file will not exist the first time the app is run
-        guard FileManager().fileExists(atPath: archiveFile) else {
-            print(">>> Does not exist: \(archiveFile)")
-            return false
-        }
-        
-        //Debugging
-        print(">>> load: \(loadSaveCounter) \(archiveFile)")
-        
-        // Get the archived data
-        let unArchivedData = NSKeyedUnarchiver.unarchiveObject(
-            withFile: archiveFile)
-        let unArchivedGists = unArchivedData as? [GistSerializable]
-    
-        guard unArchivedGists != nil else {
-            return false
-        }
-        
-        // Restore the Gists
-        GistsArray = unArchivedGists!
-        
-        // Debugging
-        loadSaveCounter += 1
-        
-        return true
-    }
-
 }
