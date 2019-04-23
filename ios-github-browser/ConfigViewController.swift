@@ -54,7 +54,7 @@ class ConfigViewController: UIViewController {
         print("New entry: \(owner ?? " ") the id: \(gistId ?? " ") the name: \(name ?? " ")")
 
         let gistVC = navigationController?.viewControllers[(navigationController?.viewControllers.count)!-2] as! GistTableViewController
-        gistVC.addGist(gist: GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? " "))
+        gistVC.addGist(gist: GistSerializable(owner: owner ?? " ", id: gistId ?? " ", name: name ?? "No Name Given"))
         _ = navigationController?.popViewController(animated: true)
     }
 }

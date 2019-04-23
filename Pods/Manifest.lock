@@ -1,20 +1,24 @@
 PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
   - Highlightr (2.1.0)
   - NBNRequestKit (2.2.0)
 
 DEPENDENCIES:
+  - ActionSheetPicker-3.0
   - Highlightr (~> 2.1.0)
   - NBNRequestKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - ActionSheetPicker-3.0
     - Highlightr
     - NBNRequestKit
 
 SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
   Highlightr: 595f3e100737c8de41113385da8bd0b5b65212c6
   NBNRequestKit: 30c39d8e23e94f935bfc2a25789c44e4a6e1bfdd
 
-PODFILE CHECKSUM: 932f7fb1f15d5e683ae22a207b24105a4a063f89
+PODFILE CHECKSUM: fa035f012f901a3cf50711f86dd20a428456bf08
 
 COCOAPODS: 1.6.1
