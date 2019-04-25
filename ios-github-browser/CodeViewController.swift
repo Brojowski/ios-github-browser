@@ -15,7 +15,7 @@ class CodeViewController: UIViewController {
     @IBOutlet weak var toolBar: UIToolbar!
     
     let syntax = Highlightr()!
-    var theme: String = ("Androidstudio")
+    var viewTheme: String = "androidstudio"
     
     // Gets what theme the user picked
     enum pickerSource : Int {
@@ -24,6 +24,7 @@ class CodeViewController: UIViewController {
     }
     
     var file = File()
+    var defaultTheme = UserDefaults.standard.value(forKey: "theme") as? String
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +38,7 @@ class CodeViewController: UIViewController {
         self.navigationItem.title = file.filename
         self.navigationItem.rightBarButtonItem = themeButton
     
-        let defaultTheme = UserDefaults.standard.value(forKey: "theme") as? String
+      //  let defaultTheme = UserDefaults.standard.value(forKey: "theme") as? String
     
         syntax.setTheme(to: defaultTheme ?? "androidstudio")
         codeView.backgroundColor = syntax.theme.themeBackgroundColor
@@ -51,18 +52,20 @@ class CodeViewController: UIViewController {
     // Brings up the ActionSheetPicker with list of all themes
     @objc func themeButtonTapped() {
         let themes = syntax.availableThemes()
-        let indexOrNil = themes.index(of: theme.lowercased())
+        let indexOrNil = themes.index(of: viewTheme.lowercased())
         let index = (indexOrNil == nil) ? 0 : indexOrNil!
+        let selection = themes.index(of: viewTheme )
         
         ActionSheetStringPicker.show(withTitle: "Pick a Theme",
                                      rows: themes,
-                                     initialSelection: index,
+                                     initialSelection: selection ?? index,
                                      doneBlock:
             { picker, index, value in
                 let theme = value! as! String
                 self.syntax.setTheme(to: theme)
                 UserDefaults.standard.setValue(theme, forKey: "theme")
-                self.theme = theme.capitalized
+                UserDefaults.standard.synchronize()
+                self.viewTheme = theme.capitalized
                 self.updateColors()
         },
                                      cancel: nil,
